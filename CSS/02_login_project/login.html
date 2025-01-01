@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <style>
+      body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        background-color: #4070f4;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 30px;
+        width: 300px;
+      }
+      h2 {
+        color: rgb(48, 46, 46);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgb(39, 39, 41);
+      }
+      button {
+        background-color: #4070f4;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        font-size: large;
+        font: bold;
+      }
+      button:hover {
+        background-color: #0734ad;
+        cursor: pointer;
+      }
+      .forgetClass {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: light;
+        color: #4070f4;
+      }
+      .accountClass {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: light;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Login</h2>
+      <form>
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <p class="forgetClass">Forgot password?</p>
+        <button type="submit">Login</button>
+      </form>
+      <p class="accountClass">
+        Don't have an account?
+        <span style="color: #4070f4; cursor: pointer">Singup</span>
+      </p>
+    </div>
+  </body>
+</html>
