@@ -140,7 +140,13 @@ for (let i = 0; i < myNumbers.length; i++) {
 
 // Challange # 10
 
-let myTeaCollection = ["iced tea", "herbal tea", "chai", "matcha", "earls grey"];
+let myTeaCollection = [
+  "iced tea",
+  "herbal tea",
+  "chai",
+  "matcha",
+  "earls grey",
+];
 
 let shortTeas = [];
 
@@ -150,4 +156,81 @@ for (const tea of myTeaCollection) {
   }
   shortTeas.push(tea);
 }
-console.log(shortTeas);
+// console.log(shortTeas);
+
+// %%%%%%%%%%%%%%% REVISION  %%%%%%%%%%%%%%%%%%
+
+// chl # 1
+
+let myTeas = ["Green tea", "black tea", "chai", "oolong tea"];
+
+let mySelectedTeas = [];
+
+for (let i = 0; i < myTeas.length; i++) {
+  if (myTeas[i] === "chai") {
+    break;
+  }
+  mySelectedTeas.push(myTeas[i]);
+}
+// console.log(mySelectedTeas);
+
+// chnlg # 2
+
+let myNewCities = ["London", "New York", "Sydeny", "Paris", "Berline"];
+
+let myNewVisitedCities = [];
+
+for (let i = 0; i < myNewCities.length; i++) {
+  if (myNewCities[i] === "Paris") {
+    continue;
+  }
+  myNewVisitedCities.push(myNewCities[i]);
+}
+// console.log(myNewVisitedCities);
+
+// chlng # 3
+
+let myNewNumbers = [1, 2, 3, 4, 5, 6];
+
+let myNewSmallNumbers = [];
+
+for (const number of myNewNumbers) {
+  if (number === 4) {
+    break;
+  }
+  myNewSmallNumbers.push(number);
+}
+// console.log(myNewSmallNumbers);
+
+// chlng # 4
+
+let myCitiesPopulation = {
+  london: 8900000,
+  "New York": 7900000,
+  Mailsi: 3400000,
+  Berline: 450000567,
+};
+
+let myNewCitiesPopulations = {};
+
+for (const city in myCitiesPopulation) {
+  if (city === "Berline") {
+    break;
+  }
+  myNewCitiesPopulations[city] = myCitiesPopulation[city];
+}
+// console.log(myNewCitiesPopulations);
+
+// chlng 5
+
+let myNewTeas = ["Green tea", "black tea", "chai", "oolong tea"];
+
+let myAvalibaleTea = [];
+
+myNewTeas.forEach((tea) => {
+  if (tea === "chai") {
+    return;
+  }
+  myAvalibaleTea.push(tea);
+});
+console.log(myAvalibaleTea);
