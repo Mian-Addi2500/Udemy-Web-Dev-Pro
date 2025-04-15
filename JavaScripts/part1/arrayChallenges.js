@@ -80,6 +80,7 @@ topCities.pop();
    Merge these two arrays into a new array named `worldCities`.
 */
 
+
 let europeanCities = ["Paris", "Rome"];
 let asianCities = ["Tokyo", "Bangkok"];
 let worldCities = europeanCities.concat(asianCities);
