@@ -1,6 +1,6 @@
 //💎Array Basics💎
 
-//1st way of creting an array which is mostly used 🔻
+//1st way of creating an array which is mostly used 🔻
 
 const myArr = [11, 12, 13, 14, 15];
 
@@ -14,7 +14,7 @@ const myArr2 = new Array(21, 22, 23, 24, 25);
 
 // 🔺 output : 11
 
-//💠 Array use the approch of [Shallow copy] mean share the same referance point like [Heap] rather then [Stack] means if something chnges into the array the orignal array should be effected mean changes
+//💠 Array use the approch of [Shallow copy] mean share the same referance point like [Heap] rather then [Stack]. Stack means if something chnges into the array the orignal array should be effected mean changes and vice versa for [Heap]
 
 //💎Array Methods💎
 
@@ -54,7 +54,7 @@ let myn1 = myArr.slice(1, 3);
 // 🔺 output : B [ 11, 12, 13, 14, 15 ]
 // console.log(myn1);
 // 🔺 output : [12, 13]
-// 🔺In Slice fist Index Range includes and last not includes and Orignal array does not effected
+// 🔺In Slice fist Index Range includes and last not includes and [Orignal array does not effected]
 
 // Splice 🔻
 
@@ -65,7 +65,7 @@ let myn2 = myArr.splice(1, 3);
 // console.log(myn2);
 // 🔺 output : [ 12, 13, 14 ]
 
-// 🔺In Splice fist Index Range includes and also last includes but the Orignal array  effected  the remining index values remaines in the Orignal array
+// 🔺In Splice fist Index Range includes and also last includes but the [Orignal array  effected ] the remining index values remaines in the Orignal array
 
 // 💠Let see another methods of an Array 🔻
 
@@ -82,7 +82,7 @@ const dc_heros = ["superman", "flash", "batman"];
 
 // console.log(marvel_heros[3][1]);
 
-// 🔺 output : flash => this is also work but it is not good practes
+// 🔺 output : flash => this is also work but it is not good practices
 
 // 💠now another way to get our desier output🔻
 
@@ -92,16 +92,16 @@ const dc_heros = ["superman", "flash", "batman"];
 
 // console.log(all_heros);
 
-// 🔺output : [ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ] => now this is what we want and in this concept we also learn that [concat return new array] but push does not
+// 🔺output : [ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ] => now this is what we want and in this concept we also learn that [concat return new array] but [push does not]
 
-// 💠but there is an another easy way to get our desier output which mostly people use is called [sapered operator]🔻
+// 💠but there is an another easy way to get our desier output which mostly people use is called [seapered operator]🔻
 
 const allNewHeros = [...marvel_heros, ...dc_heros];
 //console.log(allNewHeros);
 
 // 🔺output : [ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ] =>which give same result like concate but mostly people prefer this that why we use it mostly
 
-// Now we understand another concept of array which we use [raearly]🔻
+// Now we understand another concept of array which we use [raearly] in future🔻
 
 const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
 
@@ -109,15 +109,15 @@ const myRealArray = anotherArray.flat(Infinity);
 
 //console.log(myRealArray);
 
-// 🔺output :[1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5] => by this all values comes in to single array by using [flat] and [flat] also get [depth] that at what depth I solve the array but we use infinity so it automatically take all depth range
+// 🔺output :[1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5] => by this all values comes in to single array by using [flat] and [flat] also get [depth] that at what depth I should solve the array but we use [infinity] so it automatically take all depth range
 
-// Now we understand another concept of array which we use [Mostly] speacily when we [data scraping ]form any web page🔻
+// Now we understand another concept of array which we use [Mostly] speacily when we do [data scraping ]form any web page🔻
 
-// when we select the data from any web page then it was many time in diff formate like nodelist,objects or string form the data comes but we want an array formate bcz we loop through an array so how we convert this data formate in to an array let see 🔻
+// when we select the data from any web page then it was come many time in diff formate like [nodelist,objects or string formate ] the data comes but we want an array formate bcz we loop through an array so how we convert this data formate in to an array let see 🔻
 
 //console.log(Array.isArray("Adil"));
 
-// 🔺output : false => so first we Question that is ['adil'] is array so the answer is [false] bcz it is string not array
+// 🔺output : false => so first we Question that is ['adil'] is an array so the answer is [false] bcz it is string not array
 
 // so how to convert this [string] into an array let see 🔻
 
@@ -137,7 +137,7 @@ let scor1 = 100;
 let scor2 = 200;
 let scor3 = 300;
 
-// like this situation also comes that if we have multiple variables or arrays then we also to convert in to array so we also easily convert it insted of using[.from] we also use [.of] this also returns a new array from a set of elements now set elemtns shuold be array or variables e.t.c let see how to converts all elements🔻
+// like this situation also comes that if we have multiple variables or arrays then we also to convert it in to array so we also easily convert it insted of using[.from] we also use [.of] this also returns a new array from a set of elements now set  of elemtns shuold be array or variables e.t.c let see how to converts all elements🔻
 
 //console.log(Array.of(scor1, scor2, scor3));
 

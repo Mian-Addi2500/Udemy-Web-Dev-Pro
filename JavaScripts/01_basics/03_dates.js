@@ -1,24 +1,24 @@
 let myDate = new Date();
 //console.log(myDate);
-//output : 2025-04-07T06:23:57.619Z => this is our date object which is not easily understandable
+//output => 2025-04-07T06:23:57.619Z => this is our date object which is not easily understandable
 
 //to understand date object clearly with many method of conversion of date and check them one by one
 
 //try Date to convert in string
 
 //console.log(myDate.toString());
-//output : Mon Apr 07 2025 11:33:05 GMT+0500 (Pakistan Standard Time) => now this is tiny bit ok ratjer then 2025-04-07T06:23:57.619Z
+//output => Mon Apr 07 2025 11:33:05 GMT+0500 (Pakistan Standard Time) => now this is tiny bit ok rather then 2025-04-07T06:23:57.619Z
 
 // now explore other methods one by one which print date but in diff formate we use them according to our requirement
 /*
-console.log(myDate.toDateString()); //output : Mon Apr 07 2025
-console.log(myDate.toLocaleString()); //output : 4/7/2025, 11:41:00 AM
-console.log(myDate.toLocaleDateString()); //output : 4/7/2025
-console.log(myDate.toLocaleTimeString()); //output : 11:41:00 AM
-console.log(myDate.toISOString()); //output :2025-04-07T06:41:00.628Z
-console.log(myDate.toJSON()); //output :2025-04-07T06:41:00.628Z
-console.log(myDate.toTimeString()); //output :11:41:00 GMT+0500 (Pakistan Standard Time)
-console.log(myDate.toUTCString()); //output :Mon, 07 Apr 2025 06:41:00 GMT
+console.log(myDate.toDateString()); //output => Mon Apr 07 2025
+console.log(myDate.toLocaleString()); //output => 4/7/2025, 11:41:00 AM
+console.log(myDate.toLocaleDateString()); //output => 4/7/2025
+console.log(myDate.toLocaleTimeString()); //output => 11:41:00 AM
+console.log(myDate.toISOString()); //output => 2025-04-07T06:41:00.628Z
+console.log(myDate.toJSON()); //output => 2025-04-07T06:41:00.628Z
+console.log(myDate.toTimeString()); //output => 11:41:00 GMT+0500 (Pakistan Standard Time)
+console.log(myDate.toUTCString()); //output => Mon, 07 Apr 2025 06:41:00 GMT
 */
 // what is the type of date
 
@@ -40,7 +40,7 @@ let myCreatedDate = new Date("01-14-2025");
 
 //Now [Time Stamp] concept in dates
 
-//this concept is used we specially we desigine quizez in js and also when we desigine Polls and check which one give fastes poll made him winner for this situations we use timeStamps
+//this concept is used we specially we desigine quizez in js and also when we desigin Polls and check which one give fastes poll made him winner for this situations we use timeStamps
 
 let myTimeStamp = Date.now();
 //console.log(myTimeStamp);
@@ -67,7 +67,7 @@ let myTimeStamp = Date.now();
 let newDate = new Date();
 //console.log(newDate.getDay());
 //console.log(newDate.getMonth() + 1);
-// 🔺 we use +1 bcz month start from 0 so the end user don't b confused to we sue +1
+// 🔺 we use +1 bcz month start from 0 so the end user don't b confused so we use +1
 
 //💠 if we want to get day or month full name or in differ formate we should be customize or date like 🔻
 

@@ -1,6 +1,6 @@
 // 2 ways of declearing Objects 1)littler type 2)constructor type
 
-// so there is a concept which is called [Singleton] which when we made object with constructor then the object is singleton mean it is only one object like him only (apny thra ka sirf aik hi ya object h )
+// so there is a concept which is called [Singleton] which when we made object with [constructor] then the object is singleton mean it is only one object like him only (apny thra ka sirf aik hi ya object h )
 
 //⏳👁‍🗨 interview Q is => When we built object with constructor the singleton and whe we builte object like/with litterals then this is not singleton
 
@@ -29,7 +29,7 @@ const jsUser = {
 
 // 2nd
 // console.log(jsUser["email"]);
-// 🔺In this method we use squre brackets [] to access values and when we use [] then we must key in [string] form then it will take value and we also knows that Object take key name as [string] type by default
+// 🔺In this method we use squre brackets [] to access values and when we use [] then we must key in [string] formate then it will take value and we also knows that Object take key name as [string] type by default
 
 // Now why we use squre bracket [] method 🔻
 
@@ -80,7 +80,7 @@ jsUser1.greetingsTwo = function () {
 
 // console.log(jsUser1.greetingsTwo());
 
-// 🔺this concept when we referance the same object for this we use[this] and when we right [this and after this we use (.) like {this.}]  then all properties of our objects shown to us and we use them easily.
+// 🔺this concept when we referance the same object for this we use[this] and when we right [[this] and after [this] we use (.) like {this.}]  then all properties of our objects shown to us and we use them easily.
 
 // Now who to [Singleton] our object or how to declear our object with help of [Constructor]🔻
 
@@ -133,7 +133,7 @@ const obj3 = {
   6: "b",
 };
 
-// now thought that to store bothe objects in new object like🔻
+// now thought that to store both objects into new object like🔻
 
 const obj4 = { obj1, obj2 };
 // console.log(obj4);
@@ -145,11 +145,11 @@ const obj5 = Object.assign({}, obj1, obj2, obj3);
 
 // 🔺output : { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' } => this is our desire output
 
-// 🔺 now how the above concept work in [assign] method we use two thing 1)Target and 2)source. Target means all values come into this target empty object {} and store in it . Source means all thouse values which should be combined like in our case values are obj1, obj2,and obj3 all these value we should want to combine into a single object. And store all thes values in to target {} object
+// 🔺 now how the above concept work in [assign] method we use two thing 1)Target and 2)source. [Target] means all values come into this targeted empty object {} and store in it . [Source] means all thouse values which should be combined like in our case values are obj1, obj2,and obj3 all these value we should want to combine into a single object. And store all thes values in to target {} object
 
-//🔺 So this is assing Method bout acctullay we should use it rearly
+//🔺 So this is [assing Method] but acctullay we should use it rearly
 
-// We should moslty use [Sepreade] method like we use it in [Array] this method also use there 🔻
+// We should moslty use [Seapred] method like we use it in [Array] this method also use there 🔻
 
 const obj6 = { ...obj1, ...obj2, ...obj3 };
 // console.log(obj6);
@@ -176,10 +176,10 @@ const users = [
 // 🔺We study them next lec we see them in Projects this type of syntex mostly comes that there should be many [Object] in our [Array] and we want to [Loop] through them or print any value from them
 
 // how to print value from that type of data 🔻
-// We use loop through our array by array.map which we study in upcoming lec now we simply access 1st object email like this 🔻
-// console.log(users[1].email);
+// We use loop through our array by [array.map] which we study in upcoming lec now we simply access 1st object email like this 🔻
+// console.log(users[0].email);
 
-// 🔺output : h@gmail.com => Inthis concept 1st we simply access the 1st object of array by using array[0] method which we already study in array topic the we use [.] notation and we get our desire output
+// 🔺output : h@gmail.com => Inthis concept 1st we simply access the 1st object of array by using array[0] method which we already study in array topic and then we use [.] notation and we get our desire output
 
 // now we futher study the next concept of geting [keys] of any Object
 
@@ -195,7 +195,7 @@ ptclUser.isLoggedIn = true;
 
 //🔺Output : [ 'id', 'name', 'email', 'isLoggedIn' ] => By this all [keys] comes
 
-//🔺  ⏳👁‍🗨 Notice 1 thing the keys comes in datatype of array[] this is most important when we work with data base to loop through data easily
+//🔺  ⏳👁‍🗨 Notice 1 thing the keys comes in datatype of array[] this is most important when we work with [data base] to loop through data easily
 
 // We also get [Values] to from an Object 🔻
 
@@ -203,9 +203,9 @@ ptclUser.isLoggedIn = true;
 
 //🔺Output :[ '456Werty', 'Zono', 'z@gmail.com', true ] => And these are also comes in arry Data type
 
-// 🔺 Want our output convert into [Array] now we apply all methods od array easily
+// 🔺 Want our output convert into [Array] now we apply all methods of array easily
 
-// Another concept come which is [Object.entries] This method is comprativaly use less let see what is its purpose🔻
+// Another concept come which is [Object.entries] This method is comparativaly use less let see what is its purpose🔻
 
 // console.log(Object.entries(ptclUser));
 
@@ -219,7 +219,7 @@ ptclUser.isLoggedIn = true;
 
 */
 
-// When we loop through in an Objects and after loop we extract some values and during extracting values sometime this value should not be exisit and if the value doesnot exist then there shulod chance of crash our app for this we use this concept. This concept simply ask to the Object that you has this value or not. So let see how it work🔻
+// When we loop through in an [Objects] and after loop we extract some values and during extracting values sometime this value should not be exisit and if the value doesnot exist then there should be the chance of crash our app for this we use this concept. This concept simply ask to the Object that you has this value or not. So let see how it work🔻
 
 // console.log(ptclUser.hasOwnProperty("name"));
 
@@ -243,7 +243,7 @@ const course = {
 
 // 🔺Output : Hitesh Sir
 
-// But some people not like this to write evey time [course.courseInstructor] they want simple small name for this thye should [de-structure] the Object like 🔻
+// But some people not like this to write evey time [course.courseInstructor] they want simple small name for this they should [de-structure] the Object like 🔻
 
 const { courseInstructor } = course;
 
@@ -251,7 +251,7 @@ const { courseInstructor } = course;
 
 // 🔺Output : Hitesh Sir => Now rather then using [course.courseInstructor] after de-structuring the object they simply use [courseInstructor]
 
-// But some time tye want to also change the property name and according there own choice thye also do this too. let see how🔻
+// But some time they want to also change the property name and according there own choice they also do this too. let see how🔻
 
 const { courseInstructor: Instructor } = course;
 
@@ -263,7 +263,7 @@ const { courseInstructor: Instructor } = course;
 
 //💢💠 Now Comes on our API concept 🔻
 
-// Api's are value which are comes from BackEnd and how we write them. In early days these values comes was in XML form which so difficult task to write these value. But Now a days these values are comes in [JSON] formate
+// Api's are value which are comes from BackEnd and how we write them. In early days these values comes was in [XML form] which was so difficult task to write these value. But Now a days these values are comes in [JSON] formate
 
 // Now how [JSON] look like ? 🔻
 

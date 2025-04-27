@@ -21,7 +21,7 @@ if (condition) {
 
 */
 
-// now see some exaples of [if] statment
+// now see some examples of [if] statment
 
 const temperator = 41;
 if (temperator < 50) {
@@ -145,7 +145,7 @@ const emptyObj = {};
 if (Object.keys(emptyObj).length === 0) {
   //   console.log(`Object is empty `);
 }
-// 🔺Output : Object is empty => we see in object file that if we use [Object.keys()] and pass [our object name] in [keys]  then we get the [array of keys of our object] . now we have array of keysof an object so we check the length of an array in our [if] condition
+// 🔺Output : Object is empty => we see in object file that if we use [Object.keys()] and pass [our object name] in [keys]  then we get the [array of keys of our object] . now we have array of keys of an object so we check the length of an array in our [if] condition
 
 // now we also discuse some other [true] conditions 🔻
 
@@ -183,7 +183,7 @@ let val3;
 val3 = undefined ?? 15;
 
 // console.log(val3);
-//🔺  output : 15 => this concept is created when we call from [database] or specially use some [fire base] or [app write] then we don't have directly responce. We get 2 values so, there should be a chance that we get [null] response or should [response] doesn't come to me mean [undefined] So in this case our complete code structure should be effected. So for these sitautaions this concept is specially made that we treate value in it that if the value is [null] then assing [null] inside him (ta ky mn us hisab sy case ko adjest kr ln) if [undefined] then ok or if any [value] comes then assing the [value] to it. So for this special case which study in [database] furthure.
+//🔺  output : 15 => this concept is created when we call from [database] or specially use some [fire base] or [app write] then we don't have directly responce. We get 2 values so, there should be a chance that we get [null] response or should [response] doesn't come to me mean [undefined] So in this case our complete code structure should be effected. So for these sitautaions this concept is specially made that we treate value in it that if the value is [null] then assing [null] inside him (ta ky mn us hisab sy case ko adjest kr ln) if [undefined] then ok or if any [value] comes then accessing the [value] to it. So for this special case which study in [database] furthure.
 
 //💠💠➖➖➖➖💢🔰 Terniary Operator (?) 🔰💢➖➖➖➖💠💠
 

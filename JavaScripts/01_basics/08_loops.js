@@ -13,7 +13,7 @@ for (let i = 0; i < array.length; i++) {
 for (let i = 1; i < 5; i++) {
   const element = i;
   if (element == 3) {
-    // console.log(`3 is best number`);
+    // console.log(`Number 3 is best number`);
   }
   //   console.log(element);
 }
@@ -21,7 +21,7 @@ for (let i = 1; i < 5; i++) {
  🔺output 🔻
 1
 2
-3 is best number
+Number 3 is best number
 3
 4
 */
@@ -45,7 +45,7 @@ for (let i = 0; i < myHeros.length; i++) {
 
 // now we understands some keywords in loop 🔻
 
-// this concept is used when we start loop it does not mean that should finish complet loop mean if we have data of 1000 books and we want to show them on web pages but we donot want to show them in one page we should show 20 books on one page and 20 on second page and so on, So for this we have special keywords in Loops 1)break 2)continue leet see how it work 🔻
+// this concept is used when we start loop it does not mean that should finish compelet loop mean if we have data of 1000 books and we want to show them on web pages but we donot want to show them in one page we should show 20 books on one page and 20 on second page and so on, So for this we have special keywords in Loops 1)break 2)continue let see how it work 🔻
 
 for (let i = 1; i < 5; i++) {
   // now I want when [i = 3 ] then break the loop and push me out from the loop this [break] keyword use
@@ -56,7 +56,7 @@ for (let i = 1; i < 5; i++) {
   //   console.log(`value of i is : ${i}`);
 }
 for (let i = 1; i < 5; i++) {
-  // now I want when [i = 3 ] then contineu the loop and skip 3 value and continue by using [continue]
+  // now I want when [i = 3 ] then contineu the loop and skip 3rd value only and continue by using [continue]
   if (i === 3) {
     // console.log(`dected 3`);
     continue;
@@ -125,7 +125,7 @@ do {
 
 //💠💠➖➖➖➖💢🔰 Array specific loops 🔰💢➖➖➖➖💠💠
 
-// now we disscuse Array special loops these are specialy made for array lest see what types of these loop 🔻
+// now we disscuse Array special loops these are specially made for array let see what types of these loop are 🔻
 
 //💠💠➖➖➖➖💢🔰 for of loop 🔰💢➖➖➖➖💠💠
 /*
@@ -184,11 +184,11 @@ map.set("IN", "india");
 map.set("Fr", "France");
 map.set("PK", "Pakistan");
 
-// 🔺It like [Object] but main thing it [ doesnot repeate values]. i.e in our case [map.set("PK", "Pakistan");] is repeate 2 time use but in output it will give nly 1 time this value. let see the output by printing it 🔻
+// 🔺It like [Object] but main thing it [ doesnot repeate values].  i.e in our case [map.set("PK", "Pakistan");] is repeate 2 time use but in output it will give only 1 time this value. let see the output by printing it 🔻
 
 // console.log(map);
 
-// 🔺output : Map(3) { 'PK' => 'Pakistan', 'IN' => 'india', 'Fr' => 'France' } => see [map] is unique value mean use 1time value only and in which order we add values the order should not b change mean when we add [pk] at 1st line and the add [pk] at last line it should take 1st line mean use order of inputs. In furthur when we study [dataStructurs] then there it should be used
+// 🔺output : Map(3) { 'PK' => 'Pakistan', 'IN' => 'india', 'Fr' => 'France' } => see [map] is unique value mean use 1 time value only and in which order we add values the order should not b change mean when we add [pk] at 1st line and then add [pk] at last line it should take 1st line mean use order of inputs. In furthur when we study [dataStructurs] then there it should be used
 
 // Now main thing is that can I [Loop] through it if I loop through then how ? let see 🔻
 
@@ -223,7 +223,7 @@ Key is : Fr and Value is France
 
 */
 
-//💠💢 Let see if we have [Object] and can we iterate it by is [map] concept in [for of loop]💢💠
+//💠💢 Let see if we have [Object] and can we iterate it by same as like [map] concept in [for of loop]💢💠
 
 let myGame = {
   game1: "NFC",
@@ -235,7 +235,7 @@ let myGame = {
 //   console.log(key);
 // }
 
-// 🔺output : TypeError: myGame is not [iterable ] => So it means this concept is not work on object
+// 🔺output : TypeError: myGame is not [iterable ] => So it means this concept is not work on [object]
 
 //💠💠➖➖➖➖💢🔰 For-In loop🔰💢➖➖➖➖💠💠
 
@@ -323,11 +323,11 @@ for (const [key, value] in myCountryMap) {
 
 // 🔺 We couldn't itrate the [map] in for-In loop
 
-// ⏳👁‍🗨 Now we see if we want to loop through on [Object] then we use [For-in loop] and when we loop through on [Arrays] then we use [for-of loop] but it is not we use many other loop on [array] mostly
+// ⏳👁‍🗨 Now we see if we want to loop through on [Object] then we use [For-in loop] and when we loop through on [Arrays] then we use [for-of loop] but it is not we use moslty but many other loop on [array] mostly used which are below
 
-//💠💠➖➖➖➖💢🔰 Foreach loop 🔰💢➖➖➖➖💠💠
+//💠💠➖➖➖➖💢🔰 ForEach loop 🔰💢➖➖➖➖💠💠
 
-// Now this is an instring loop which is we mostly use on [array] many of time by the 2 type of loops which are mostly use on array 1)foreach loop 2)map. we study [map] in next lec but now discuse [foreach loop] 🔻
+// Now this is an instring loop which is we [mostly use] on [array] many of time by the 2 type of loops which are mostly use on array 1)foreach loop 2)map. we study [map] in next lec but now discuse [foreach loop] 🔻
 /*
 syntax 🔻
 
@@ -338,11 +338,11 @@ array.forEach(element => {
 
 const coding = ["js", "ruby", "cpp", "py"];
 
-// most of time the loop we use in our work is [forEach]. Actually some [loops] are directly add in properties. Means when we see [prototypes] of [array] in [console of browser] we have 2 loop in the property of [array]. 1)forEach 2)Map.These are 2 parameters of [loop] which are bydefault inject in  [Array] bcz everOne know if [arrays] comes then it should be nesseary to [loop] on [Array] for geting values of that array. SO for this most of the time we use this in our work🔻
+// most of time the loop we use in our work is [forEach]. Actually some [loops] are directly add in properties. Means when we see [prototypes] of [array] in [console of browser] we have 2 loop in the property of [array]. 1)forEach 2)Map.These are 2 parameters of [loop] which are bydefault inject in  [Array] bcz everyOne know if [arrays] comes then it should be nesseary to [loop] on [Array] for getting values of that array. So, for this most of the time we use this in our work🔻
 
-// now to take it in our workis very easy but it is littel bit a [highr-order function]. let what is [higher-order function] in forEach let discuse 🔻
+// now to take it in our work is very easy but it is littel bit a [highr-order function]. let discuse what is [higher-order function] in forEach  🔻
 
-// We see in our previous loops [for-of and for-in] we automatically goes to our [array and objects] we do not tell them the length or anything. So like that now in our [forEach loop]  these      [functiohow much big is that [array] and what is it's lenght and I start from 0. these all things function knows. we just give function and talk with him like 🔻
+// We see in our previous loops [for-of and for-in] we automatically goes to our [array and objects] we do not tell them the length or anything. So like that now in our [forEach loop]  these      [function how much big is that [array] and what is it's lenght and I start from 0. these all things function knows. we just give function and talk with him like 🔻
 coding.forEach((item) => {
   // console.log(item);
 });
@@ -365,9 +365,9 @@ function printMe(item) {
 }
 coding.forEach(printMe);
 
-// 🔺This is also work same like above in this we simply right function first and then rfer it to [forEach]
+// 🔺This is also work same like above in this we simply right function first and then refer it to [forEach]
 
-// now see more instresting things about [ForEach] it has not only acess of [item] it also have 2 more things in his access🔻
+// now see more instresting things about [ForEach] it has not only access of [item] it also have 2 more things in his access🔻
 
 coding.forEach((item, index, array) => {
   // console.log(item, index, array);
@@ -384,9 +384,9 @@ py 3 [ 'js', 'ruby', 'cpp', 'py' ]
 
 */
 
-// 💠💢Now if we have condition in which [objects in an array]💢💠
+// 💠💢Now if we have condition in which [objects is in an array]💢💠
 
-// [{},{},{}] => let see how to takel this condition 🔻
+// [{},{},{}] => let see how to take this condition 🔻
 
 const myCoding = [
   {
@@ -420,9 +420,9 @@ let values = coding2.forEach((item) => {
 
 // console.log(values);
 
-// 🔺 output: undefined => so it means [forEach] should not return any thing. if I manually [return item] then the result should also be same [undefined]. So, it means that this [forEach] sould [not return] anything if you want or not but it should not return any value.
+// 🔺 output: undefined => so it means [forEach] should not return anything. if I manually [return item] then the result should also be same [undefined]. So, it means that this [forEach] sould [not return] anything if you want or not but it should not return any value.
 
-// but always it is not nessasery that we take some values form array and we want to print them or use them. it maybe possible I want some other thing form it like for now I give him temprary condition that suppose if it's name is [cpp] then [return] it otherwise not. So for this case what will I do ? For this case our [forEach loop] should not work which was we confident on it that if I have an array then I will do it easily with [forEach loop] but in this condition our all confident should be down at this situation. So for this case shuld we go back to our traditional [for loop] ? no for this situation [Js] have another concept of loop. let explore it with an other example 🔻
+// but always it is not nessasery that we take some values form array and we want to print them or use them. it maybe possible I want some other thing form it like for now I give him temprary condition that suppose if it's name is [cpp] then [return] it otherwise not. So for this case what will I do ? For this case our [forEach loop] should not work which was we confident on it that if I have an array then I will do it easily with [forEach loop] but in this condition our all confident should be down at this situation. So for this case should we go back to our traditional [for loop] ? no for this situation [Js] have another concept of loop. let explore it with an other example 🔻
 
 //💠💠➖➖➖➖💢🔰 filter operation🔰💢➖➖➖➖💠💠
 
@@ -434,7 +434,7 @@ let newNums = myNums.filter((num) => {
 
 // console.log(newNums);
 
-// 🔺output : [ 5, 6, 7, 8 ] =>It mean it will [return] our value which we did not get in [forEach]. It mean we understand when we use [filter]. In filter we have [callback like forEach] and in this callback every value each access but after that we give [condition(num > 4)] and then where where condition should be true there all values should be [return] otherwise [not return]. This is called [basics of filter].
+// 🔺output : [ 5, 6, 7, 8 ] =>It mean it will [return] our value which we did not get in [forEach]. It mean we understand when we use [filter]. In filter we have [callback like forEach] and in this callback every value each access but after that we give [condition(num > 4)] and then where where the conditions should be true there all values should be [return] otherwise [not return]. This is called [basics of filter].
 
 // Now if I want this work in [forEach] rather then using [filter]. How can I do ? 🔻
 
@@ -486,7 +486,7 @@ const myNumber = [1, 2, 3, 4, 5, 6];
 
 // I want to add 10 in every value using [map]
 
-// [Map] is a good compateter of [ForEach]. Thisisalso take a [callback]. The good thing is [map] automatically return the values🔻
+// [Map] is a good competator of [ForEach]. This is also take a [callback]. The good thing is [map] automatically return the values🔻
 
 const newNumbers = myNumber.map((num) => {
   return num + 10;
@@ -585,7 +585,7 @@ let shoppingCart = [
 
 // In this we want to add prices which are  avalible in [object within an Array]. We have many methods to add it but it is realy common funcationality syntax where we have some values in an [array] or some values in an [object] and we want to [add] them. So for that we should use [reduce]
 
-// Let see hoe it work🔻
+// Let see how it work🔻
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0);
 

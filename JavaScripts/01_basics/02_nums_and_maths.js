@@ -5,21 +5,21 @@ const score = 400; // in this case js automatically dectact that score is a numb
 const balance = new Number(100); //now it is 100% cleared that it is a number no doubet
 //console.log(score); //output : 400 => which auto js dectact this is number
 
-//console.log(balance); // output : [Number: 100] => which is spacificaly cast this that this is a 'Number' this is littel bit biff b/w simple and spicifially declear in 'new' keyword
+//console.log(balance); // output : [Number: 100] => which is spacificaly cast this, that this is a 'Number' this is littel bit biff b/w simple and spicifially declear in 'new' keyword
 
 //now method of numbers
 
 //console.log(balance.toString().at.length); // number convert to string now apply all method of string on it
 
-//console.log(balance.toFixed(2)); //output : 100.00 => this will show presition values for specially e-comerise values
+//console.log(balance.toFixed(2)); //output : 100.00 => this will show [presition] values for specially e-comerise values
 
 const otherNum = 123.89675;
 
-//console.log(otherNum.toPrecision(5)); //output : 123.90 =>this is another way of presition value and in this 'toPrecision' also 'roundof' the values too
+//console.log(otherNum.toPrecision(5)); //output : 123.90 =>this is another way of [presition] value and in this ['toPrecision'] also ['roundof'] the values too
 
 const hundreds = 1000000;
 //console.log(hundreds.toLocaleString("en-IN"));
-//output :10,00,000 =>  this will commos in value by default it is in 'US' stander but when we use ("en-IN") then it convert in to 'Indian' Stander
+//output :10,00,000 =>  this will commos in value by default it is in ['US' stander] but when we use ("en-IN") then it convert in to ['Indian' Stander]
 
 //%%%%%%%%%%%%%%%%%% Part # 2 [Maths] %%%%%%%%%%%%%%%%
 
@@ -27,7 +27,7 @@ const hundreds = 1000000;
 //output : Object [Math] {} =>this is object
 
 //console.log(Math.abs(-4));
-//output : 4 =>this willgive us absloute value which means change all -ve value to +ve only
+//output : 4 =>this will give us absloute value which means change all -ve value to +ve only
 
 //console.log(Math.round(4.6));
 //output : 5 => this will roundofour values

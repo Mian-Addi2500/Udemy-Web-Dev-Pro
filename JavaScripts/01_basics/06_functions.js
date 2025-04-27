@@ -25,7 +25,7 @@ addTwoNumbers;
 // now we check what is the value in 🔺result variable ? 🔻
 // console.log("Result :", result);
 
-// 🔺output : Result : undefined => In result the value should be [undefined]. How in result value should be [undefined]? This is the big instersting consept that what we return back from the function? Sometime people think that (6) should b return bcz we should[console.log] so this value should be return ! No no this is the [major mistake].It is not mean to [print] the [console] the [fuction] should also return the same value like [console] this is wrong concept
+// 🔺output : Result : undefined => In result the value should be [undefined]. How in result value should be [undefined]? This is the big instersting concept that what we return back from the function? Sometime people think that (6) should b return bcz we should[console.log] so this value should be return ! No no this is the [major mistake].It is not mean to [print] the [console] the [fuction] should also return the same value like [console] this is wrong concept
 
 // [Return] is another Concept and [console] is simply to print the console value. Now we write a function with another way to understand the [return ]concept 🔻
 
@@ -35,14 +35,14 @@ function subTwoNumbers(num1, num2) {
   // 1st way 🔻
   //   let sub = num1 - num2;
   //   return sub;
-  //   this return means when function when exicute after that return me this [sub]
+  //   this return means when function should exicute after that return me this [sub]
 
   //   2nd way 🔻
 
   return num1 - num2;
 
   //   console.log("adil");
-  //🔺after return statement function donot do any think yes before return we should do everything
+  //🔺after return statement function donot do any thing yes before return we should do everything
 }
 // now we check out the value in result1 🔻
 
@@ -62,7 +62,7 @@ loginUserMessage("adil");
 
 // 🔺Nothing comes in output why? bcz function exicuted but that function returns the values bcz we say in function defination that return the value so the function return the value but we donot say anywhere that to print value or store in any variable
 
-// So we print the value by raping function into console.log 🔻
+// So we print the value by reaping function into console.log 🔻
 
 // console.log(loginUserMessage("adil"));
 
@@ -72,7 +72,7 @@ loginUserMessage("adil");
 
 // console.log(loginUserMessage());
 
-// 🔺 output : [undefined] just loggedIn => then undefined should comes not null comes ok
+// 🔺 output : [undefined] just loggedIn => then [undefined] should comes [not null] comes ok
 
 // let see brefe example if no one can give value to function 🔻
 
@@ -318,7 +318,7 @@ const myNewObj = (num1, num2) => ({ username: "adil" });
   console.log(`DB Connected`);
 })();
 
-// 🔺 output : DB Connected => this is also calle [named iffe] bcz it has [connection] as a name
+// 🔺 output : DB Connected => this is also called [named iffe] bcz it has [connection] as a name
 
 // now let see when we use [arrow function] then [iffe] work or not ? Let see 🔻
 
@@ -326,7 +326,7 @@ const myNewObj = (num1, num2) => ({ username: "adil" });
   console.log(`DB Connected Two`);
 })();
 
-// 🔺 output : DB Connected Two => This is called [simple iffe] bczit has no name
+// 🔺 output : DB Connected Two => This is called [simple iffe] bcz it has no name
 
 // now how to give parameter to [iffe] 🔻
 
