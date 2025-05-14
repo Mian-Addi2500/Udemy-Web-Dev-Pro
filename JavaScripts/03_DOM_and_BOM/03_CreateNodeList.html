@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom | Chai aur Code</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    // create div element 🔻
+
+    const div = document.createElement("div");
+    //console.log(div);
+
+    // add properties in this [div] element🔻
+
+    // add [className] on div 🔻
+
+    div.className = "main";
+
+    // add [id] on div 🔻
+
+    div.id = "myID";
+
+    // add [Random id] on div 🔻
+
+    // div.id = Math.floor(Math.random()*10 + 1)
+
+    // 🔺This for fun
+
+    // set Attributes on div 🔻
+
+    div.setAttribute("title", "generated title");
+
+    // add [style] on div 🔻
+
+    div.style.backgroundColor = "green";
+    div.style.padding = "15px";
+
+    // now add [text] with diff ways🔻
+
+    // 1st way 🔻
+
+    // div.innerText = "Chai aur Code";
+
+    // 2nd way 🔻
+
+    const addText = document.createTextNode("Chai with Code");
+    div.appendChild(addText);
+
+    // 🔺 both methods do same work but mostly people prefer 2nd method
+
+    // Now finally we attach our div on our document to show us on web page let see how 🔻
+
+    document.body.appendChild(div);
+
+    // simple project🔻
+
+    // create a div and rap it to function withname [newDiv] and pass arguments to function that what [text and bgColor] we want and we run loop and says to loop that you run for 3 times and take bgColor and text from the array of bgColor and array of Text respectively. let see how we do it 🔻
+
+    // function
+    function multipleDivs(text, bgcolor) {
+      let div = document.createElement("div");
+      //   console.log(div);
+      div.style.backgroundColor = `${bgcolor}`;
+      const textnode = document.createTextNode(`${text}`);
+      div.appendChild(textnode);
+      document.body.appendChild(div);
+    }
+
+    // arrays of text and color
+    const textArr = ["adil", "Kamil", "zono"];
+    const colorArr = ["red", "green", "blue"];
+
+    // loop
+    textArr.forEach((text, index) => {
+      return multipleDivs(text, colorArr[index]);
+    });
+
+    // another function for my practise
+    function createNewDivs(id, className, text, bgColor) {
+      const div = document.createElement("div");
+      div.id = `${id}`;
+      div.className = `${className}`;
+      const textNode = document.createTextNode(`${text}`);
+      div.appendChild(textNode);
+      div.style.backgroundColor = `${bgColor}`;
+      div.style.color = `black`;
+      document.body.appendChild(div);
+    }
+
+    // Arrays
+    const idArr = ["123", "456", "789"];
+    const classArr = ["div1", "div2", "div3"];
+    const textArray = ["Fatima", "Adil", "Zono"];
+    const bgColorArr = ["pink", "yellow", "orange"];
+
+    // loop
+    textArray.forEach((text, index) => {
+      return createNewDivs(
+        idArr[index],
+        classArr[index],
+        text,
+        bgColorArr[index]
+      );
+    });
+  </script>
+</html>

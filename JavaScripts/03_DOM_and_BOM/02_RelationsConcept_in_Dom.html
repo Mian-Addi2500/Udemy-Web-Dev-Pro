@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom | Chai aur Code</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    //💢💢🔰🔰💢💢Targets💢💢🔰🔰💢💢
+
+    // 💎1)Select Parent Element and move from parent to child💎
+    const parent = document.querySelector(".parent");
+    // console.log(parent);
+
+    // 🔺output:<div class="parent">...</div>  This will give complete parent div to us
+
+    // console.log(parent.children);
+
+    // 🔺output : HTMLCollection(4) [div.day, div.day, div.day, div.day] ===> This will give us [html collection]
+
+    // console.log(parent.children[1]);
+
+    //🔺output : <div class="day">Tuesday</div>
+
+    // console.log(parent.children[1].innerHTML);
+
+    //🔺output : Tuesday
+
+    // 🔺 by these all above concept we understand that we have an elements all having there [childrens]
+
+    // now we want to loop this [HTML Collection]. Now we suppose that if we have [html collection] then 1st we convert it to [array] yha that concept is true but we use basic [for loop] to loop through it and we now [for loop] should apply on all things bcz if it see [html or array] like any thing it should work on it let see how 🔻
+
+    for (let i = 0; i < parent.children.length; i++) {
+      // console.log(parent.children[i].innerHTML);
+    }
+
+    /*
+    🔺output🔻
+
+    Monday
+    Tuesday
+    Wednesday
+    Thursday
+    */
+
+    // Now understand futher [parent] concept🔻
+
+    //parent.children[2].style.color = "red";
+
+    // select 1st child element of [parent] 🔻
+
+    //console.log(parent.firstElementChild);
+
+    // 🔺output : <div class="day">Monday</div>
+
+    // select last child element of [parent] 🔻
+
+    //console.log(parent.lastElementChild);
+
+    // 🔺output : <div class="day">Thursday</div>
+
+    //💎2)Select child Element and move from child to parent💎
+
+    const dayOne = document.querySelector(".day");
+
+    //console.log(dayOne);
+
+    // 🔺 this will give 1st element in our case is [monday]
+
+    //console.log(dayOne.parentElement);
+
+    // 🔺 this will give complete parent element
+
+    //console.log(dayOne.nextElementSibling);
+
+    // 🔺 this will give [next element] of our [prasent Element]
+
+  </script>
+</html>

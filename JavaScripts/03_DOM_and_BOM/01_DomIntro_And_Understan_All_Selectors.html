@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>DOM Learning</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">
+        Dom learning on Chai aur Code
+        <span style="display: none">test text</span>
+      </h1>
+      <h2>Lorem, ipsum dolor.</h2>
+      <h2>Lorem, ipsum dolor.</h2>
+      <h2>Lorem, ipsum dolor.</h2>
+      <h2>Lorem, ipsum dolor.</h2>
+
+      <p>Lorem ipsum dolor sit amet.</p>
+      <input type="password" name="" id="" />
+      <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // 💠💠Select Elements in diff ways💠💠
+    // 🚨🚨for this file we run all scripts in Browser Console🚨🚨
+
+    // 💎💎 1) Select element by it [ID] 💎💎
+
+    document.getElementById("title");
+
+    // 🔺 output : <h1 id="title" class="heading">Dom learning on Chai aur Code</h1> ==> this will give full element
+
+    // now how to check value of my [id] for this what we do leet see 🔻
+
+    document.getElementById("title").id;
+    // 🔺 output : 'title' ==> this will give us the value of our [id]
+
+    // now how to check value of my [id] for this what we do leet see 🔻
+
+    document.getElementById("title").class;
+    // 🔺 output : undefine ==> this will give us the value of our [id]
+    document.getElementById("title").className;
+    // 🔺 output : 'heading' ==> this will give us the value of our [class]
+
+    // now how to get attributes values 🔻
+
+    document.getElementById("title").getAttribute("id");
+    // 🔺 output : 'title' ==> this will give us the value of our [id]
+    document.getElementById("title").getAttribute("class");
+    // 🔺 output : 'heading' ==> this will give us the value of our [class] and notice in this we give [class] not [className]
+
+    // 🧩💢now how to Set attributes values🧩💢
+
+    document.getElementById("title").setAttribute("class", "test");
+    //🔺 this will Overwrite the class value and if we want to get both previous and new value in class then we give previous class value and new both in [set attribute] 🔻
+    document.getElementById("title").setAttribute("class", "heading test");
+
+    // we can store our element in variable 🔻
+    const title = document.getElementById("title");
+
+    // 🧩💢now how to give Style on an element🧩💢
+    title.style.backgroundColor = "green";
+    title.style.padding = "15px";
+    title.style.borderRadius = "15px";
+
+    // 🚨🚨This is most instring which we mostly use🚨🚨
+
+    // 🧩💢now we see how to select content🧩💢
+
+    // 💠💠let see how to get content of our element💠💠
+
+    title.textContent;
+    // 🔺output : 'Dom learning on Chai aur Code test text' => this will show our all element content mean if [display : none] [css property] added this will ignore it and show all content
+
+    // 🔰another way of content 🔰🔻
+
+    title.innerHTML;
+
+    // 🔺output : 'Dom learning on Chai aur Code <span style="display: none">test text</span>' => this will show our complete element content in which if we add any [HTML] in our content this will also show all these in content mean it should also support [HTML] tags. And when we setAttributs we mostly use [innerHTML] method
+
+    // 🔰another way of content 🔰🔻
+    title.innerText;
+
+    // 🔺output : 'Dom learning on Chai aur Code' => this will show our element content only which should be shown on web page mean in this [display : None ] property should work
+
+    // 💎💎 2) Select element by it [QuerySelector and QuerySelectorall] 💎💎
+
+    // 💢💢 i)QuerySelector 💢💢
+
+    document.querySelector("h2");
+    //🔺output : <h2>Lorem, ipsum dolor.</h2> ==>this will give us only 1st h2 bcz it is only querySelector not querySelectorAll
+
+    // now we want to select [id] of [h1] using [querySelector]🔻
+
+    document.querySelector("#title");
+    // 🔺This will give us complet element of id [title]
+
+    // now we want to select [class] of [h1] using [querySelector]🔻
+
+    document.querySelector(".heading");
+    // 🔺This will give us complet element of class [heading]
+
+    // now we want to select [input filed] of [pasword] using [querySelector]🔻
+
+    document.querySelector("input[type='password']");
+    // 🔺This will give us complet element of input[type='password']
+
+    // now we want to select [fist-child] of [paragraph] using [querySelector]🔻
+
+    document.querySelector("p:first-child");
+    // 🔺This will give us complet element of 1st child of our paragraph
+
+    //💎💎💎 all these cocept depends on [CSS Selector] study that how much you have knowledge about [CSS selector]
+
+    // Now if I have an [unorder list => ul] and I want to change color of [1st list item => li] of [ul] how can i do lets see how I select this by [querySelector] 🔻
+
+    // 1st store all [ul] in variable 🔻
+    const myUl = document.querySelector("ul");
+
+    //🔺 by this we get all [ul ] list
+
+    // now we futher use [querylist] on [myUl]🔻
+
+    const turnGreen = myUl.querySelector("li");
+
+    // 🔺 this will give [1st] li which is our main goal to select 1st [li]
+
+    // now we apply our style on [li] easily bcz we select it 🔻
+
+    turnGreen.style.backgroundColor = "green";
+    turnGreen.style.padding = "10px";
+    turnGreen.innerText = "1st";
+
+    // 💢💢 ii) QuerySelectorAll 💢💢
+
+    document.querySelectorAll("li");
+
+    /*
+    🔺 output 🔻
+
+    NodeList(3) [li, li, li]
+    0: li
+    1: li
+    2: li
+    length: 3
+    [[Prototype]]: NodeList
+    entries: ƒ entries()
+    forEach: ƒ forEach()
+    item: ƒ item()
+    keys: ƒ keys()
+    length: (...)
+    values: ƒ values()
+    constructor: ƒ NodeList()
+    Symbol(Symbol.iterator): ƒ values()
+    Symbol(Symbol.toStringTag): "NodeList"
+    get length: ƒ length()
+    [[Prototype]]: Object
+    
+    */
+    //  🔺 This will give us nodelist and nodeList is not pure [array] mean we say this is not array but some features are look like array [i.e] forEAch etc.
+
+    // now to add bgc on 2 elemet what we do 🔻
+
+    const tempListItems = document.querySelectorAll("li");
+    tempListItems[1].style.backgroundColor = "red";
+
+    // how to use [forEach] on [NodeList]
+
+    tempListItems.forEach((l) => (l.style.backgroundColor = "green"));
+
+    // 💎💎 3) Select element by it [ClassName] 💎💎
+
+    const tempClassList = document.getElementsByClassName("list-item");
+    /*
+
+    🔺OutPut 🔻
+    
+    HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+    0: li.list-item
+    1: li.list-item
+    2: li.list-item
+    3: li.list-item
+    length: 4
+    [[Prototype]]: HTMLCollection
+    item: ƒ item()
+    length: (...)
+    namedItem: ƒ namedItem()
+    constructor: ƒ HTMLCollection()
+    Symbol(Symbol.iterator): ƒ values()
+    Symbol(Symbol.toStringTag): "HTMLCollection"
+    get length: ƒ length()
+    [[Prototype]]: Object
+
+    */
+
+    // On this HTML Collection  we donot loop through it with any loop method mean by using [forEACH LOOP] we don't get our desire result bcz [Html collection ] doesn't support [forEach loop] like [NodeList]
+
+    // Then what we do to loop through [HTML Collection] let see 🔻
+
+    // For this we 1st convert [HTML Collection] to [array] and then use all array method same as if we want to use [map] on [nodelist] we should also convert [nodelist] to [array]
+
+    // Let see how to convert [HTML Collection] to [array] 🔻
+
+    Array.from(tempClassList);
+    //  now this is an array
+    const myConvertedArray = Array.from(tempClassList);
+
+    // now we try to loop throgh our [myConvertedArray]
+
+    myConvertedArray.forEach((l) => (l.style.color = "blue"));
+  </script>
+</html>

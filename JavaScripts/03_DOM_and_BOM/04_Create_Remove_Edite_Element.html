@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur Code | DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    // 💢💎💢 Create, Edit, Delet Element💢💎💢
+
+    // 💎💎Create Element💎💎
+
+    // Add new list item in above unorder List 🔺 let see how 🔻
+
+    // we should add new language [li] and let suppose we should add [li] in futur so for this we add new item in [DOM] by previous method which we study in previous lect but now we want to explore furtur ways to add [li] in [dom]🔻
+
+    // For this we create a [function ] bcz we know function can declear [1] time and [reuse] every time, So  let see 🔻
+
+    // 💠💠 Way # 1💠💠
+
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("python");
+
+    // 🔺 this is basic way of add element but this is not [optimise] approch
+
+    // 💠💠 Way # 2💠💠
+
+    // So, leet see what is optimise approch to Add [element] 🔻
+
+    function addOptimiseLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptimiseLanguage("CPP");
+
+    // 🔺This is an optimise apporch in this we don't use [innerHTML] bzc in [innerHTML] tree should be completly tiverse which is not best approch in big projects but in simple project [innerHtml] should not create problem. But [Hitesh Sir] refer this method [append Child]
+
+    // 💎💎Edite Element💎💎
+
+    // 💠💠1st example of Edite💠💠
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+
+    secondLang.innerHTML = "adil";
+    // console.log(secondLang.innerHTML);
+    // 🔺This [innerHtML] should work but same issue is optimisitation
+
+    // So to solve this issue we should create new element and replace it with older one. let see how it work 🔻
+
+    const newLi = document.createElement("li");
+    // we should also use [append] method but there [Sir g ] see us another way of text🔻
+    newLi.textContent = "mojo";
+    // use [replaceWithe] to replace complete element
+    secondLang.replaceWith(newLi);
+
+    // 💠💠2nd example of Edite💠💠
+
+    // I want to change 1st to [math]
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = `<li>Math</li>`;
+
+    // 💎💎Remove/Delet  Element💎💎
+
+    // I want to remove [cpp]🔻
+
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+  </script>
+</html>
