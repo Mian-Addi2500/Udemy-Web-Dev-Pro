@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html Events</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://google.com" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // 💠This is an old approch💠
+    /*
+    document.getElementById('owl').onclick = function () {
+        alert('qel')
+    }
+        */
+
+    // 💠This is modrner Approch and best approch💠
+    document
+      .querySelector("#owl")
+      .addEventListener("click", (e) => console.log(e), false);
+
+    /*   
+    
+            🚨Imp Notes for interview purspos🚨
+
+    🚩 Must study these topics in Events
+
+    ⭐⭐    type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget, clientX, clientY, screenX, screenY, altkey, ctrlkey, shiftkey,keycode  ⭐⭐
+    */
+
+    // now we discuse event propogation  for this we take 2 examples🔻
+
+    // example 1
+
+    document.querySelector("#images").addEventListener(
+      "click",
+      (e) => {
+        console.log(" click inside the ul");
+      },
+      false
+    );
+
+    // example 2
+
+    document.querySelector("#owl").addEventListener(
+      "click",
+      (e) => {
+        console.log(" owl clicked");
+        // when we donot want bubbling then we use this 🔻
+        e.stopPropagation();
+        // 🔺is mn hm just udhr hi rhen gy jhn click kren gy bs
+      },
+      false
+    );
+
+    // 🔺 In the above concept we undersatand 2 thing 1)bubbling and 2) capaturing
+
+    // 💠Now what is bubling💠
+
+    // 🚩⭐🚩 In bubling when we click on owl according to oul above example the owl is inside the url mean when we click owl at a same time we also click on ul too so now the main thing is what thing should be clicked 1st ul or owl. In bubling it go from chlid to parent mean bottom to top it means 1st owl clicked and then ul clicked and ⭐This is also default behavior of events ⭐ means if we donot right [false] after fn() it auto take it [false]  🚩⭐🚩
+
+    // 💠Now what is capturing💠
+
+    // 🚩⭐🚩 This is vise versa of [bubling] mean when we right [true] in place of [false] after fn() in [event listening] it work from [top to bottom]  🚩⭐🚩
+
+    // 💠Now what is preventDefault concept💠
+
+    // In this when I click to google I donot want to go to site now when we click we directly go to google but how can I do this to not go to Google🔻
+
+    document.getElementById("google").addEventListener(
+      "click",
+      (e) => {
+        console.log("google clicked");
+        e.stopPropagation();
+
+        e.preventDefault();
+      },
+      false
+    );
+  </script>
+</html>

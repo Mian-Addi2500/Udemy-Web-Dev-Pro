@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html Events | Simple Project</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://google.com" id="google"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // ⭐ What is Project⭐
+
+    // 🥝🪐🥝 In this project when I click on any image the image should be disapera from web page. 🥝🪐🥝
+
+    // Let see how to do it 🔻
+
+    document.querySelector("#images").addEventListener(
+      "click",
+      (e) => {
+        // We have a concept of event which is [target] take give us exect targeted value 🔻
+
+        // console.log(e.target);
+
+        // 🔺The output is from <img> tag but we want total <li> bcz when we remove then image should be remove but  this [.] bolit point should be remained. SO for this we have also get things after [target too by using target.] and after [.] there should be many other methods we call for example in our case we need [li] so we use [.parentnode] it will give us complete [li] and by this we should now delet complete element🔻
+
+        console.log(e.target.parentNode);
+
+        // 🔺now when we target our complet element now how to remove the elemet for this we have 2 approches let discus below 🔻
+
+        // let removeIt = e.target.parentNode;
+
+        // // 1st approch
+
+        // // removeIt.remove()
+
+        // // 2nd approch
+
+        // removeIt.parentNode.removeChild(removeIt);
+
+        // 🔺In this we get li element and by using parentNode we go to complete UL now we use removeChlid and give it to its name
+
+        // 🥝🪐🥝The above approch it ok but when we click little bit abovefrom google then complete images disapera on 1 click this is an issue so how to takel this let see 🔻
+
+        // 🚨 we take conditions that if event tag name is 'IMG' then remove otherwise not 🚨
+
+        if (e.target.tagName === "IMG") {
+          let removeIt = e.target.parentNode;
+
+          // 1st approch
+
+          // removeIt.remove()
+
+          // 2nd approch
+
+          removeIt.parentNode.removeChild(removeIt);
+        }
+      },
+      
+    );
+  </script>
+</html>
