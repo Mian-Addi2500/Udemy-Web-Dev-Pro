@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai Code</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+  </body>
+  <script>
+    // ⭐⭐ Now in this we study some Functions ⭐⭐
+
+    // 🥝🪐🥝  setInterval fn()🥝🪐🥝
+
+    // ⚡ setInterval(fn, time) - This function calls the fn() every time after the time specified in milliseconds. mean it continues to call the function until it is stopped. But on other hand, setTimeout(fn, time) calls the function only once after the time specified in milliseconds.So the difference is that setInterval() will keep calling the function until it is stopped, while setTimeout() will call the function only once after the specified time.
+
+    // ⚡ setInterval() also have 3rd parameter which is the arguments that will be passed to the function when it is called. This is useful when you want to pass some arguments to the function that is being called by setInterval(). for example, 🔻
+
+    function printMessage(message) {
+      console.log(message, Date.now());
+    }
+    // setInterval(printMessage, 1000, "Hello, World!"); // This will print "Hello, World!" every second
+
+    // ⚡ now we want to stop the setInterval() function after some time, we can use clearInterval() function. This function takes the interval ID returned by setInterval() as an argument and stops the interval. for example, 🔻
+
+    let intervalId = setInterval(printMessage, 1000, "Hello, World!"); // This will print "Hello, World!" every second
+
+    // ⚡ Now we want to stop the setInterval() function after clicking the stop button 🔻
+
+    document.getElementById("stop").addEventListener("click", () => {
+      clearInterval(intervalId); // This will stop the interval
+    });
+
+    // ⚡ and now we want to start the setInterval() function again after clicking the start button 🔻
+
+    document.getElementById("start").addEventListener("click", () => {
+      intervalId = setInterval(printMessage, 1000, "Hello, World!"); // This will start the interval again
+    });
+  </script>
+</html>

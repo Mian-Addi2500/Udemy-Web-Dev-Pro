@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai Code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // ⭐⭐ Now in this we study some Functions ⭐⭐
+
+    // 🥝🪐🥝 1) setTimeout fn()🥝🪐🥝
+
+    //⚡ This actually a method but this should also call an [api] too.So that is its intersting aspect of this
+
+    //⚡ setTimeout() is a built-in JavaScript function that allows you to execute a piece of code after a specified delay (in milliseconds).
+
+    //⚡ It takes two arguments: a callback function and a delay in milliseconds.
+
+    // ⚡ 1st way of using setTimeout
+
+    setTimeout(() => {
+      console.log("Hello, World!");
+    }, 2000); // This will log "Hello, World!" after 2 seconds
+
+    // ⚡ 2nd way of using setTimeout
+
+    function greet() {
+      console.log("Hello, Universe!");
+    }
+
+    setTimeout(greet, 2000);
+
+    // ⭐⭐ Now can I change the [h1] which we use above HTML after 2 seconds⭐⭐
+
+    // const changeText = function () {
+    //   document.querySelector("h1").innerHTML = `best js series`;
+    // };
+    // setTimeout(changeText, 2000);
+
+    // 🔺 So the [setTimeOut] is run only [1] time after the deley which we give to it
+
+    // ⭐ now we see when we give time to [setTimeOut] but the work we want from that fn() but it should not be complete SO there should be a method to stop this [setTimeOut] fn() from running. So let see how to stop it 🔻
+
+    // so we have a [stop] button and when we click on that button then the [setTimeOut] fn() should not run
+
+    // So we have to use the [clearTimeout] method to stop the [setTimeOut] fn() from running
+
+    // ⚡ clearTimeout() is a built-in JavaScript function that allows you to cancel a timeout that was previously set using setTimeout().
+
+    // ⚡ It takes one argument: the identifier returned by setTimeout(). mean it take the referance bcz we have many setTimeout() in our code so it will take the referance of that setTimeout() which we want to stop
+
+    const timeoutId = setTimeout(() => {
+      document.querySelector("h1").innerHTML = `best js series`;
+    }, 2000);
+
+    // ⚡ now I want to use clearTimeout() to stop the above setTimeout() from running on an event like a button click mean when we click on the [stop] button then the above setTimeout() should not run 🔻
+
+    document.getElementById("stop").addEventListener("click", () => {
+      clearTimeout(timeoutId);
+      console.log("Timeout stopped.");
+    });
+  </script>
+</html>
