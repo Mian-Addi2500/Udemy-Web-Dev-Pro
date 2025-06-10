@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <body>
+    <button>Button Clicked</button>
+  </body>
+  <script>
+    // ⭐In this we study about bind using react exampl⭐
+
+    //Actually in early days of react  they use bundlers in react but we  suppose react made a [class] behind the scene and some methods they write themselves but remaing we write manually let see how they give us react class
+
+    class React {
+      constructor() {
+        this.library = "React";
+        this.server = "https://localhost:3000";
+        // 🔺this was basic made for us in react
+
+        // now in constructor we have to declear other methods to [constractor ky elawa]
+
+        // now in our case our [requrement] that I want when this page reload an automatically an object created
+
+        // now we have 2 part of requrement that 1) we get referance of that button and 2) we have h method that is [handelClick] that give us message that on click the button it give some message . so let see how we will do 🔻
+
+        // now what i do in this constructor bcz we create new object then it will give us refrence of all values in constructor so for this we write some manual code
+
+        document
+          .querySelector("button")
+          .addEventListener("click", this.handleClick.bind(this));
+
+        // 🔺  when we use [bind and also give [this] in it ] then we access [server] mean [constructor] values otherwise without [bind] we did not access [constructor] values then we only access [handleClick] method. That's why in early days we use concept of [bind] and also get the current context in it which is [this] same as [call] which we study previous
+      }
+      //   this is our [handelClick] method
+
+      handleClick() {
+        console.log(`Button CLicked`);
+        console.log(this.server);
+      }
+    }
+
+    const app = new React();
+  </script>
+</html>
