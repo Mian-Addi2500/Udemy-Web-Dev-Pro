@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clouser aur Chai</title>
+  </head>
+  <body style="background-color: #313131">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
+  <script>
+    // what is closure?
+    // Closure is a feature in JavaScript where an inner function has access to the outer function's variables.
+    // It allows the inner function to "remember" the environment in which it was created, even after the outer function has finished executing.
+
+    // Closure is a function that has access to its own scope, the outer function's scope, and the global scope.
+    // Closure is created when a function is defined inside another function.
+
+    // for understanding closure, we need to understand lexical scoping first.
+    // Lexical scoping is a way of defining the scope of variables in JavaScript.
+    // In JavaScript, a variable's scope is determined by its position in the source code, which is known as lexical scoping.
+
+    // example of lexical scoping: 🔻
+
+    function parent() {
+      let name = "Mozilla"; // name is a local variable created by parent
+
+      //   console.log("parent", secret); // this will throw an error because secret is not defined in this scope of parent function
+
+      function childOne() {
+        // childOne() is the inner function, that forms a closure
+        let secret = "123abc";
+        console.log("child 1", name); // use variable declared in the parent function
+
+        // now we create another inner function in childOne
+        function grandChild() {
+          console.log("grand child", name); // this will work because grandChild has access to the parent's scope
+          console.log("grand child", secret); // this will work because grandChild has access to the child's scope
+        }
+        grandChild(); // call the grandChild function
+      }
+      function childTwo() {
+        console.log("child 2", name);
+
+        // console.log("child 2", secret); // this will throw an error because secret is not defined in this scope
+      }
+      childOne(); // call the inner function
+      childTwo(); // call the second inner function
+    }
+    parent(); // Output: Mozilla
+
+    // 🔺 this is our [lexical scoping]
+
+    // ⚡⚡now let's see how closure works with the above example⚡⚡
+
+    function makeFunc() {
+      const name = "Mozilla";
+      function displayName() {
+        console.log(name);
+      }
+      //   displayName(); we did not run this bcz we return the fn() when we store the makeFunc in a variableand then run that variable
+
+      // when we call makeFunc, it returns the displayName function, which has access to the name variable
+      // it means when we return displayName, it forms a closure which means it also pass all things in function too which are in the scope of makeFunc not only the displayName function
+      return displayName;
+    }
+    // when we store the [makeFunc] function in a variable, it will return the displayName function
+    // and when we call that variable, it will execute the displayName function which has access to the name variable from the makeFunc scope.
+    // this is how closure works in JavaScript
+    const myFunc = makeFunc();
+    myFunc();
+
+    // 🪐🪐now we see its Practical implimitation or realword secnireo when you use this in your work
+
+    // for this make an other [script] tag in the html file and write this code in that script tag
+  </script>
+  <script>
+    // Practical implimitation of closure
+    // this is a simple example of how closure works in JavaScript
+    // we will create a function that will change the bg-color of the button when clicked
+
+    // ⭐ this is basic example of dom which we study in the previous chapter 🔻
+
+    // document.getElementById("orange").onclick = function () {
+    //   document.body.style.backgroundColor = "orange";
+    // };
+    // document.getElementById("green").onclick = function () {
+    //   document.body.style.backgroundColor = "green";
+    // };
+
+    // but we want to give function to onclick event of the button
+
+    // let see how 🔻
+
+    function changeColor(color) {
+      //   document.body.style.backgroundColor = color;
+      // 🔺 this will not work
+      //   return (document.body.style.backgroundColor = color);
+      // 🔺 this will also not work when we return
+
+      //   now we will return a function that will change the bg-color of the body and now we will give it to the onclick event of the button
+
+      // and this is our closure concepts comes in real work
+
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+        // this function has access to the color variable from the changeColor function's lexical scope using closure
+        // so when we call this function, it will change the bg-color of the body too
+      };
+    }
+
+    document.querySelector("#orange").onclick = changeColor("orange");
+    document.querySelector("#green").onclick = changeColor("green");
+  </script>
+</html>
