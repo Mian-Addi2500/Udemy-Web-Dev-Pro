@@ -1,4 +1,4 @@
-// ⭐We study How to make promises in JS and then we study how to consiume the promises too⭐
+// ⭐We study How to make promises in JS and then we study how to consume the promises too⭐
 
 // ⚡ What is promise in js ?⚡
 
@@ -190,7 +190,7 @@ promiseFive
     // now we study another thing in it is [finally]
     // so what we do in [finally] ?
 
-    // In this we see that the error comes ok or promise resolved then it should be ok but many time I want that please tell me that you work that should you should be done ? for this we use [finally]
+    // In this we see that the error comes ok or promise resolved then it should be ok but many time I want that please tell me that you work that should you doing should be done ? for this we use [finally]
 
     // this should be nessesary to run almost we can call it default behavior of [promise] {ky ya to hoga hi hoga }
 
@@ -252,7 +252,7 @@ const promiseSix = new Promise((resolve, reject) => {
 async function consumePromiseSix() {
   // we use here [try and catch] concept bcz if resolve then code of [try] should run and if [error] then the code of [catch] should run
 
-  //   both concept of [.then and .catch] and [async and awit] is ok it's depends on you waht should you use
+  //   both concept of [.then and .catch] and [async and awit] is ok it's depends on you what should you use
 
   // ⭐What is try and catch concept in js ? ⭐
   /*

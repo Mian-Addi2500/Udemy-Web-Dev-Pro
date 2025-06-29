@@ -42,22 +42,28 @@
 
     // 🔺 output : <h1 id="title" class="heading">Dom learning on Chai aur Code</h1> ==> this will give full element
 
-    // now how to check value of my [id] for this what we do leet see 🔻
+    // now how to check value of my [id] for this what we do let see 🔻
 
     document.getElementById("title").id;
     // 🔺 output : 'title' ==> this will give us the value of our [id]
 
-    // now how to check value of my [id] for this what we do leet see 🔻
+    // now how to check value of my [class].for this what we do let see 🔻
 
     document.getElementById("title").class;
-    // 🔺 output : undefine ==> this will give us the value of our [id]
+    // 🔺 output : undefine ==> this will give us the value of our [class] but this is not correct way to get [class] value
+    // so we use [className] to get value of our [class] 🔻
     document.getElementById("title").className;
     // 🔺 output : 'heading' ==> this will give us the value of our [class]
 
-    // now how to get attributes values 🔻
-
+    // now how to get attributes values 🔻 
+    // for this we use [getAttribute] method
+    
+    // now how to get attributes values of [id] 🔻
     document.getElementById("title").getAttribute("id");
-    // 🔺 output : 'title' ==> this will give us the value of our [id]
+    // 🔺 output : 'title' ==> this will give us the value of our [id] 
+
+    // now how to get attributes values of [class] 🔻
+
     document.getElementById("title").getAttribute("class");
     // 🔺 output : 'heading' ==> this will give us the value of our [class] and notice in this we give [class] not [className]
 
@@ -75,7 +81,7 @@
     title.style.padding = "15px";
     title.style.borderRadius = "15px";
 
-    // 🚨🚨This is most instring which we mostly use🚨🚨
+    // 🚨🚨This is most intresting which we mostly use🚨🚨
 
     // 🧩💢now we see how to select content🧩💢
 
@@ -122,7 +128,7 @@
     document.querySelector("p:first-child");
     // 🔺This will give us complet element of 1st child of our paragraph
 
-    //💎💎💎 all these cocept depends on [CSS Selector] study that how much you have knowledge about [CSS selector]
+    //💎💎💎 all these concept depends on [CSS Selector] study that how much you have knowledge about [CSS selector]
 
     // Now if I have an [unorder list => ul] and I want to change color of [1st list item => li] of [ul] how can i do lets see how I select this by [querySelector] 🔻
 

@@ -36,4 +36,3 @@ const url = "https://adil.com/adil%30mian";
 const myString = "adil-mian-2500";
 
 //console.log(myString.split("-")); //output is : [ 'adil', 'mian', '2500' ]
-

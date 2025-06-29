@@ -34,7 +34,7 @@ myArr.shift();
 // console.log(myArr.indexOf(13));
 //🔺output : 2 => this means that 13 is at 2 index in our myArr array
 
-// This method is mostly used
+// ⚡⚡ This method is mostly used ⚡⚡
 
 const newArr = myArr.join();
 // 🔺 this method will [change our array to string] with ',' seprated
@@ -86,7 +86,7 @@ const dc_heros = ["superman", "flash", "batman"];
 
 // 💠now another way to get our desier output🔻
 
-// concat method
+// ⭐ concat method ⭐
 
 // const all_heros = marvel_heros.concat(dc_heros);
 
@@ -99,7 +99,7 @@ const dc_heros = ["superman", "flash", "batman"];
 const allNewHeros = [...marvel_heros, ...dc_heros];
 //console.log(allNewHeros);
 
-// 🔺output : [ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ] =>which give same result like concate but mostly people prefer this that why we use it mostly
+// 🔺output : [ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ] =>which give same result like concate but mostly people prefer this, that why we use it mostly
 
 // Now we understand another concept of array which we use [raearly] in future🔻
 

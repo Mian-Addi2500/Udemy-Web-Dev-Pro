@@ -342,7 +342,7 @@ const coding = ["js", "ruby", "cpp", "py"];
 
 // now to take it in our work is very easy but it is littel bit a [highr-order function]. let discuse what is [higher-order function] in forEach  🔻
 
-// We see in our previous loops [for-of and for-in] we automatically goes to our [array and objects] we do not tell them the length or anything. So like that now in our [forEach loop]  these      [function how much big is that [array] and what is it's lenght and I start from 0. these all things function knows. we just give function and talk with him like 🔻
+// We see in our previous loops [for-of and for-in] we automatically goes to our [array and objects] we do not tell them the length or anything. So like that now in our [forEach loop] we use functions and these [function know how much big is that our[array] and what is it's lenght and I start from 0. these all things function knows. we just give function and talk with him   like 🔻
 coding.forEach((item) => {
   // console.log(item);
 });

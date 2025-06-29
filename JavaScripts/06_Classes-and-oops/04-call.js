@@ -6,7 +6,7 @@
 
 //It allows you to borrow methods from one object and use them for another object.
 
-// In simple words , The [call method] can pass our [current ]
+
 
 // In simple words , The [call method] can pass our [current EC] to another function.
 

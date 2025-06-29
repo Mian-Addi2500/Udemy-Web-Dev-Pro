@@ -24,7 +24,7 @@ function multiplyBy5(num) {
 
 multiplyBy5(5);
 
-// but we could not do this 🔺 we can do something diff 🔻
+// but we could not do this now🔺 now we can do something diff with this fn()🔻
 
 multiplyBy5.power = 2;
 
@@ -97,7 +97,7 @@ createUser.prototype.printMe = function () {
 
 // chai.printMe();
 
-// the answer is yes we can access this method same as [array.map] concept. but there should be a problem when we use [chai.printMe()] it will give us an error that is [undefined] error. To overcome this problem when we transfer values from fn() to [chai] variable on [line#77] on that point we didnot tell him that [ky mery pass ya additionl properties aai hn] which are [printMe and increament]
+// the answer is [yes] we can access this method same as [array.map] concept. but there should be a problem when we use [chai.printMe()] it will give us an error that is [undefined] error. To overcome this problem when we transfer values from fn() to [chai] variable on [line#77] on that point we didnot tell him that [ky mery pass ya additionl properties aai hn] which are [printMe and increament]
 
 // This should be tell him and for this to tell him about these properties we use [new] keyword now he know that what should I do on [line#98] bcz now he had all properties injected in it [mean chai and tea both have all the properties which are injected in [createUser fn()]]
 
@@ -115,7 +115,7 @@ chai.printMe();
 
 /*
 
-Here's what happens behind the scenes when the new keyword is used:
+Here's what happens behind the scenes when the [new] keyword is used:
 
 🪐A new object is created: The new keyword initiates the creation of a new JavaScript object.
 

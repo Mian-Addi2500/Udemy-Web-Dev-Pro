@@ -62,7 +62,7 @@ loginUserMessage("adil");
 
 // 🔺Nothing comes in output why? bcz function exicuted but that function returns the values bcz we say in function defination that return the value so the function return the value but we donot say anywhere that to print value or store in any variable
 
-// So we print the value by reaping function into console.log 🔻
+// So we print the value by raping function into console.log 🔻
 
 // console.log(loginUserMessage("adil"));
 
@@ -74,7 +74,7 @@ loginUserMessage("adil");
 
 // 🔺 output : [undefined] just loggedIn => then [undefined] should comes [not null] comes ok
 
-// let see brefe example if no one can give value to function 🔻
+// let see berife example if no one can give value to function 🔻
 
 // 1st example 🔻
 function logIn(usernmae) {
@@ -219,7 +219,7 @@ tehmina , welcome to website
 
 */
 
-// now let see what shoul be the value of [this] mean now what is current context right now 🔻
+// now let see what shoul be the value of [this] mean now what is current context right now from out side of the object 🔻
 
 // console.log(this);
 
@@ -306,7 +306,7 @@ const myNewObj = (num1, num2) => ({ username: "adil" });
 
 // There should b a question also that there are many methods of running the function then why we need this concept [IIFE]? => Mostly we write things that have to write a file in which only a [database] connection and we want when our app strt then immdeatly our [database] connection start in our file.
 
-// And 1 more reson for this [iife] is that many time in our [globle scope] there are some variables dicleared and some it's happen we right some thing in that function and we don't want that in our function our [golbal] create some problems bcz [global scope] always available. that's why which we decleared in our function mostly [plouted] with [global scope].
+// And 1 more reson for this [iife] is that many time in our [globle scope] there are some variables dicleared and some it's happen we right some thing in that function and we don't want that in our function our [golbal] create some problems bcz [global scope] always available. that's why which we decleared in our function, mostly [plouted] with [global scope].
 
 // So these are 2 resons 🔺 1) that's we don't need ploution from [global scope] that's why we create our seprate scope bcz in function scope automaticaly created and 2) I want that the function immdeatly exicute there
 

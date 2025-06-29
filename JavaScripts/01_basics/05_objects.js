@@ -1,13 +1,13 @@
 // 2 ways of declearing Objects 1)littler type 2)constructor type
 
-// so there is a concept which is called [Singleton] which when we made object with [constructor] then the object is singleton mean it is only one object like him only (apny thra ka sirf aik hi ya object h )
+// so there is a concept which is called [Singleton] which when we made object with [constructor] then the object is [singleton] mean it is only one object like him only (apny thra ka sirf aik hi ya object h )
 
-//⏳👁‍🗨 interview Q is => When we built object with constructor the singleton and whe we builte object like/with litterals then this is not singleton
+//⏳👁‍🗨 interview Q is => When we built object with [constructor] then this is  [singleton] and whe we builte object like/with [litterals] then this is [not singleton]
 
 // Now we see the concept of [Object with constructor] 🔻
 
 // object.create
-// 🔺this is the concept by this we made object with constructor and by singleton created
+// 🔺this is the concept by this we made object with constructor and by this singleton is created
 
 // Now we see the concept of [Object Literals] 🔻
 
@@ -55,7 +55,7 @@ jsUser.email = "zono@gmail.com";
 // now how to lock value of an object mean no one can change locked value of an object🔻
 
 // Object.freeze(jsUser1);
-// jsUser.name = "Zono";
+// jsUser1.name = "Zono";
 
 // console.log(jsUser1);
 
@@ -145,7 +145,7 @@ const obj5 = Object.assign({}, obj1, obj2, obj3);
 
 // 🔺output : { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' } => this is our desire output
 
-// 🔺 now how the above concept work in [assign] method we use two thing 1)Target and 2)source. [Target] means all values come into this targeted empty object {} and store in it . [Source] means all thouse values which should be combined like in our case values are obj1, obj2,and obj3 all these value we should want to combine into a single object. And store all thes values in to target {} object
+// 🔺 now how the above concept work in [assign] method we use two thing 1)Target and 2)source. [Target] means all values come into this targeted empty object {} and store in it . [Source] means all those values which should be combined like in our case values are obj1, obj2,and obj3 all these value we should want to combine into a single object. And store all thes values in to target {} object
 
 //🔺 So this is [assing Method] but acctullay we should use it rearly
 
@@ -203,7 +203,7 @@ ptclUser.isLoggedIn = true;
 
 //🔺Output :[ '456Werty', 'Zono', 'z@gmail.com', true ] => And these are also comes in arry Data type
 
-// 🔺 Want our output convert into [Array] now we apply all methods of array easily
+// 🔺 When our output convert into [Array] now we apply all methods of array easily
 
 // Another concept come which is [Object.entries] This method is comparativaly use less let see what is its purpose🔻
 
@@ -219,7 +219,7 @@ ptclUser.isLoggedIn = true;
 
 */
 
-// When we loop through in an [Objects] and after loop we extract some values and during extracting values sometime this value should not be exisit and if the value doesnot exist then there should be the chance of crash our app for this we use this concept. This concept simply ask to the Object that you has this value or not. So let see how it work🔻
+// When we loop through in an [Objects] and after loop we extract some values and during extracting values sometime this value should not be exesisit(mojod) and if the value doesnot exist(mojod) then there should be the chance of crash our app for this we use this concept. This concept simply ask to the Object that you have this value or not. So let see how it work🔻
 
 // console.log(ptclUser.hasOwnProperty("name"));
 

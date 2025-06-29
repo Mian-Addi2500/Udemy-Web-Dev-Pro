@@ -78,7 +78,7 @@ myHeros.heyAdil();
 
 // 🔺 this will give us an erorr ==> heroPower.heyAdil is not a function ===> which means this is not possible and also this prop is not available for [string and function too]
 
-// ⭐Now we little bit discuss on inhertance⭐
+// ⭐ Now we little bit discuss on inhertance ⭐
 
 // what is inhertance or prototyple inhertance?
 
@@ -109,7 +109,7 @@ const TASupport = {
 
 teacher.__proto__ = user;
 
-// 🔺now [teacher] have full access of [user] and this is called [inhertance] mean how you can access any other object props
+// 🔺now [teacher] have full access of [user] and this is called [inhertance] mean now you can access any other object props
 
 // ⚡The above 🔺 approch is outdated now a days but it does not mean that no one can use this but this is an outdated⚡
 

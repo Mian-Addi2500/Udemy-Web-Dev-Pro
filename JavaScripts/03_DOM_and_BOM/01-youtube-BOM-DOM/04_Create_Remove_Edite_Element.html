@@ -17,7 +17,7 @@
 
     // Add new list item in above unorder List 🔺 let see how 🔻
 
-    // we should add new language [li] and let suppose we should add [li] in futur so for this we add new item in [DOM] by previous method which we study in previous lect but now we want to explore furtur ways to add [li] in [dom]🔻
+    // we should add new language [li] and let suppose we should add [li] in future so for this we add new item in [DOM] by previous method which we study in previous videos but now we want to explore further ways to add [li] in [dom]🔻
 
     // For this we create a [function ] bcz we know function can declear [1] time and [reuse] every time, So  let see 🔻
 
@@ -43,7 +43,7 @@
     }
     addOptimiseLanguage("CPP");
 
-    // 🔺This is an optimise apporch in this we don't use [innerHTML] bzc in [innerHTML] tree should be completly tiverse which is not best approch in big projects but in simple project [innerHtml] should not create problem. But [Hitesh Sir] refer this method [append Child]
+    // 🔺This is an optimize apporch in this we don't use [innerHTML] bzc in [innerHTML] tree should be completly traverse which is not best approch in big projects but in simple project [innerHtml] should not create problem. But [Hitesh Sir] refer this method [append Child]
 
     // 💎💎Edite Element💎💎
 
@@ -53,14 +53,14 @@
 
     secondLang.innerHTML = "adil";
     // console.log(secondLang.innerHTML);
-    // 🔺This [innerHtML] should work but same issue is optimisitation
+    // 🔺This [innerHtML] should work but same issue is in  optimization
 
     // So to solve this issue we should create new element and replace it with older one. let see how it work 🔻
 
     const newLi = document.createElement("li");
-    // we should also use [append] method but there [Sir g ] see us another way of text🔻
+    // we should also use [append] method but there [Sir g ] say us another way of text🔻
     newLi.textContent = "mojo";
-    // use [replaceWithe] to replace complete element
+    // use [replaceWith] to replace complete element
     secondLang.replaceWith(newLi);
 
     // 💠💠2nd example of Edite💠💠

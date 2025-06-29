@@ -4,7 +4,7 @@ let myDate = new Date();
 
 //to understand date object clearly with many method of conversion of date and check them one by one
 
-//try Date to convert in string
+//⚡⚡try Date to convert in string⚡⚡
 
 //console.log(myDate.toString());
 //output => Mon Apr 07 2025 11:33:05 GMT+0500 (Pakistan Standard Time) => now this is tiny bit ok rather then 2025-04-07T06:23:57.619Z
@@ -20,11 +20,11 @@ console.log(myDate.toJSON()); //output => 2025-04-07T06:41:00.628Z
 console.log(myDate.toTimeString()); //output => 11:41:00 GMT+0500 (Pakistan Standard Time)
 console.log(myDate.toUTCString()); //output => Mon, 07 Apr 2025 06:41:00 GMT
 */
-// what is the type of date
+//⚡⚡ what is the type of date ⚡⚡
 
 console.log(typeof myDate); // typeof date is : 'Object'
 
-// now if we want new specific date which we decleare
+//⚡ now if we want new specific date which we decleare
 
 // let myCreatedDate = new Date(2025, 0, 25);
 
@@ -36,11 +36,11 @@ console.log(typeof myDate); // typeof date is : 'Object'
 //1/25/2025, 5:03:00 AM => by this we understand that month start from 0 in js
 // let myCreatedDate = new Date("2023-01-14");
 let myCreatedDate = new Date("01-14-2025");
-//console.log(myCreatedDate.toLocaleString());
+// console.log(myCreatedDate.toLocaleString());
 
-//Now [Time Stamp] concept in dates
+//⚡⚡ Now [Time Stamp] concept in dates ⚡⚡
 
-//this concept is used we specially we desigine quizez in js and also when we desigin Polls and check which one give fastes poll made him winner for this situations we use timeStamps
+//this concept is used when specially we desigine quizez in js and also when we desigin Polls and check which one give fastest poll made him winner, for this situations we use timeStamps
 
 let myTimeStamp = Date.now();
 //console.log(myTimeStamp);
@@ -71,13 +71,11 @@ let newDate = new Date();
 
 //💠 if we want to get day or month full name or in differ formate we should be customize or date like 🔻
 
-
 console.log(
   newDate.toLocaleString("default", {
     weekday: "long",
     month: "long",
   })
 );
-
 
 //🔺 output : April Monday => this means we customize our date object

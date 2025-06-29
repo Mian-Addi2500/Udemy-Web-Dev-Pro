@@ -29,12 +29,12 @@ class User {
 class Teacher extends User {
   // now it depends on it if you want to [not overwrite constructor] in this class  but most of the time we [overwrite] it bcz teacher have tachniquly a seprate [constructor]
 
-  // now in [teacher creation] constructor there should be obusialy we definitay get [username] from [User] and we also get [emeil and password too]
+  // now in [teacher creation] constructor there should be Obviously  we definitay get [username] from [User] and we also get [emeil and password too]
 
   constructor(username, email, password) {
     // now there should be a problem to access [the username] bcz it is in [user class] and we are in [teacher class] how to access it ?
 
-    // we study in previous [call file] we use [call mehod] to get [data] from other [fn()] but in [class] the story is diff that why now a day no one can use [call method] bcz now we have class syntax and [class] give us an easy way to access [username] by using [super keyword] and in this we do not pass [this,username] like [call method] it will auto get [context of username ] by checking which class I should be [extend] and it will go to that class and get data from it [constructor] and give it to [teacher class]. let see how 🔻
+    // we study in previous [call file] we use [call mehod] to get [data] from other [fn()] but in [class] the story is diff that why now a day no one can use [call method] bcz now we have class syntax and [class] give us an easy way to access [username] by using [super keyword] and in this we do not pass [this,username] like [call method] it will auto get [context of username ] by checking which class I should be [extend] and it will go to that class and get data from it's [constructor] and give it to [teacher class]. let see how 🔻
 
     super(username);
 

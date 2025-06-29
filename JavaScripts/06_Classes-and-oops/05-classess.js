@@ -14,7 +14,7 @@ class User {
     this.password = password;
   }
 
-  //   🔺 this is our basic [constructor] by the way every time it is not nessary to write [constructor] but if classes gives us oppurtunaty so take it.
+  //   🔺 this is our basic [constructor] by the way every time it is not necessary  to write [constructor] but if classes gives us oppurtunaty so take it.
 
   // now after [constructor] we have an other method to [encriptPassword]
 

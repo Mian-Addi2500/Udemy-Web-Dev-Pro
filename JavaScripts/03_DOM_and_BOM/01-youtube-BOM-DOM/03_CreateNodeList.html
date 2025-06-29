@@ -11,16 +11,22 @@
 
     const div = document.createElement("div");
     //console.log(div);
+    // 🔺 output : <div></div> ==> this will give us empty div element
+    // now we can add properties to this div element like [className], [id], [style], [text] etc. let see how we do it 🔻
 
     // add properties in this [div] element🔻
 
     // add [className] on div 🔻
 
     div.className = "main";
+    // console.log(div);
+    // 🔺 output : <div class="main"></div> ==> this will give us    div element with className
 
     // add [id] on div 🔻
 
     div.id = "myID";
+    // console.log(div);
+    // 🔺 output : <div class="main" id="myID"></div> ==> this will give us div element with className and id
 
     // add [Random id] on div 🔻
 
@@ -31,6 +37,11 @@
     // set Attributes on div 🔻
 
     div.setAttribute("title", "generated title");
+
+    // console.log(div);
+    // 🔺 output : <div class="main" id="myID" title="generated title"></div> ==> this will give us div element with className, id and title
+
+    
 
     // add [style] on div 🔻
 

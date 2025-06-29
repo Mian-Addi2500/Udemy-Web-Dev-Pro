@@ -20,7 +20,7 @@ const person = {
 
 // 🪐 A constructor function in JavaScript is a special function used to create and initialize objects. When you call it with the new keyword, it creates a new object and sets up properties and methods for that object.
 
-//⚡ it means when we use [date] we use [new] keyword or use [promise] we use [new] keyword and many other concepts where we use [new] keyword all are using [constructor function] if form of [new] keyword. So this [new] keyword is basically [Constructor Function]
+//⚡ it means when we use [date] we use [new] keyword or use [promise] we use [new] keyword and many other concepts where we use [new] keyword all are using [constructor function] it form of [new] keyword. So this [new] keyword is basically [Constructor Function]
 
 // 🪐 This can allow us that we made multiple instance by only one object literal. In simle word you can easily create many objects with the same structure but different values
 
@@ -31,7 +31,7 @@ const person = {
 // We see this in objects bcz we did't study classes thats why we see it in objeects🔻
 
 function user(username, loginCount, isLoggedIn) {
-  // we see most of the time name of variable and passing values name are same so in this situation there should be an issue that how we total that what are varaibales inside the function and what variables you passess for this problem we change our varaibale name this is simple but we didn't want to change name we use same name of both variable and value for this we use [this.username] and [this] keyword shows this is my variable name which I give to username value leet see how 🔻
+  // we see most of the time name of variable and passing values name are same so in this situation there should be an issue that how we tackel that what are varaibales inside the function and what variables you passess for this problem we change our varaibale name this is simple but we didn't want to change name we use same name of both variable and value for this we use [this.username] and [this] keyword shows this is my variable name which I give to username value leet see how 🔻
 
   this.username = username;
 
@@ -44,7 +44,7 @@ function user(username, loginCount, isLoggedIn) {
 
   //   now we discuss instersting thing from this if we want then we return [this] keyword🔻
 
-  //   but an intersting thing if we didnot [return this] then it should be implectely [return] bydefault. mean if we did not [return this] then it should also give us value bcz bedafult [this] should be [return]
+  //   but an intersting thing if we didnot [return this] then it should be implectely [return] bydefault. mean if we did not [return this] then it should also give us value bcz bydafult [this] should be [return]
 
   //   but good practies is to [return] by own and this concept should clear what should be values comes and from where these values should comes for this we use return by own 🔻
 
