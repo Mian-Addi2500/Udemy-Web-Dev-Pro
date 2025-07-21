@@ -1,0 +1,7 @@
+⭐In this file we see whole project guid step by step⭐
+
+🪐 1st of all we create components folder in this folder we make header, footer, home folder and in these folder we make file with foldername.jsx
+
+🪐2nd create header file and footer file and home file and add all CSS from github notes and then [import] [link and navlink ] from [rrdom]
+
+🪐
