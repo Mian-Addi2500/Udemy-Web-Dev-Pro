@@ -1,0 +1,13 @@
+1. we create contexts folder in src folder and in this folder we create a file with name of [TodoContext.js] bcz it does not return any [jsx] thats why we name it [.js] now go to that file and made our [context]
+
+2.we make an [index.js] file in [contexts] folder now Question is why we make this file ? => the answer is in mostly folder mostly people make [index] file to get all [import] meterial in this [index] file and which can want any thing can get this file directly . So go to that file and see how we write code
+
+Now after above 2 files our [context] is ready
+
+3.Now we go to our [app.jsx] bcz the main work can do here in this file so go to app.jsx
+
+4.Now after making all functioanlity in app.jsx now we made our components 1by1 for this we make new folder and name it to [components] and in this folder we make our component files one is [todoitem] and other is [todoform] and we also make an [index] file in which we import all components and export them only . now go to [todoform] and see code here
+
+5.Now we go to our [todoitem] file and see code there
+
+6.Now we go to our [app.jsx] file again and add [components] to this file now at line#125

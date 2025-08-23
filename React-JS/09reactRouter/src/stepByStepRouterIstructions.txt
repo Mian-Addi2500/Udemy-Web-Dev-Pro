@@ -1,7 +1,23 @@
 ⭐In this file we see whole project guid step by step⭐
 
-🪐 1st of all we create components folder in this folder we make header, footer, home folder and in these folder we make file with foldername.jsx
+🪐 1st of all we create components folder in this folder we make header, footer, home folder and in these folder we make file with foldername.jsx and then install rrdom by [npm i react-router-dom]
 
-🪐2nd create header file and footer file and home file and add all CSS from github notes and then [import] [link and navlink ] from [rrdom]
+🪐2nd create header file and footer file and home file with 1st letter capital and [.jsx] and add all CSS from github notes and then [import] [link and navlink ] from [rrdom]
 
-🪐
+🪐3rd step now how to assemble these 3 things means header home and footer let see how? there are many ways to assablem them if we want to assambel these in [app.jsx] but in this project we didnot use [app.jsx] we do with other way let see how?
+
+🪐4th step we go to [mian.jsx] and where we rander [app] component we remove it and add or [rrouter] component which name is [RouterProvider] but but this componenet take a [prop] otherwise it didnot work. the question is what is that prop name ? this prop name is [router] and in this we also give router like [router={router}]
+
+🪐5th step now we study how to make [router] bcz we didnot make [router] right now so let see how to make it  ? for making [router] we have a method which is [createBrowserRouter] which comes from [rrdom] now what is this ? this is a method which have array in it [this method should be made by 2 ways we study both 1st we study this then we study 2nd]
+
+🪐6th now in this method we take array and in this array we add our all to all lists which we want objects e.g we have 1st object in which we have [main path] for this we made a path and this path is ['/'] we come back to it again 1st of all we make something in which we want every  time my header and footer should be same and in b/w them we change our [componenet] for this what we do let see
+
+🪐7th step we new file in [src] which name is [layout.jsx] but many people use this file name commenly is [rout] but we use this name . now this layout we made react fn() componenet by writing [rfce] for further deatail go to this file
+
+🪐8th after adding all componenet home , about , and contact us now we make a [user] folder and file in this folder with same name in [src] folder
+
+🪐9th after making [user] file now we go to main.jsx bcz all work that how take [parameter] from [url] this all work should be done in route so go to main.jsx  and see how we can do this ?
+
+🪐10th after passing route in our [main.jsx] now we come to our [user] component and in this we use [usePramps] hook which comes from [rr-dom] by this we get our url id easily
+
+🪐11th now we make a new component which name is [gihub] and file name should be same [github] and add this path in [main.jsx] and also add in [navbar] to and then now go to this file and see what whould we do further in this file lets go to [github] file

@@ -1,0 +1,20 @@
+1. 💠we copy all css from this link :- ' https://github.com/hiteshchoudhary/chai-aur-react/blob/main/contextNotes.md ' 
+
+2.💠 now we make our [context] but this time we use diff aproch rather then [11minicontext] project for this we made a new folder in [src] with name of [context] and in this folder we make a file and we name it [theme.js] now question is why we use this direct only [theme.js] in [context] folder  bcz we use in our [11minicontext] project 2 files with name of [UserContext.js and Usercontextprovider.jsx] so bcz we take diff aproch thats why we use simply [theme.js] now go to this file and see how we [create] our context in diff aproch bcz this aproch also work like above project aproch so let see in [theme.js] file
+
+3.💠 now go to src folder and create folder with name of components and in this we make our components one by one and get there CSS code by this link ' https://github.com/hiteshchoudhary/chai-aur-react/blob/main/contextNotes.md '
+
+4. 💠 now when we made our [ThemeBtn] now we see that how one told to our [Card] bcz our [card] did't know rigth now [hn ji yhi to asl bt h ] that by adding [condition] on our [themeModeStatus] in our [themeBtn] file at line#20 our work done bcz these are [states] and our states are directly linked with our [theme] and in this [theme] we take all values [variable and 2 methods] and in our [app.jsx] we say that if any change in [themeMode] and we use [useEffect hook] thats why wo sara apny ap run ho jy ga 
+
+
+so intresting thing is that ky apky jo UI developer hn us ny jo b ap ko CSS wagera likh ky di h DarkMode wagera ko ap ko us ky ander changes hi ni krni h yhi to sub sy intresting bt h isi leye to hm deakhty hn Tailwind wagera mn sub mn 1 hi btn ata h oper Q ky UI ka kam jo h sara wo koi or kr rha h or ya jo funcationality h [btn] ki wo hmry [react Engeniers] kr rhy hn 
+
+Q ky [react Engeniers] ny sirf 1 oper btn dala h jo [html] mn sirf 1 value change kr rhy hn or hr chez [raped] h [context api] sy 
+
+⭐Importatnt note⭐
+
+when we right all code exect ok then it will also not working bcz we have no issue in our code but we have an issue in our [Tailwind] so to over come it by adding simple one line code in our [index.css] that is === >    @custom-variant dark (&:where(.dark, .dark *)); 
+
+why we right this line ? bcz to enable this funcationality in our HTML we use this line of code 
+
+so go to index.css file and add this line to 2nd line of the project

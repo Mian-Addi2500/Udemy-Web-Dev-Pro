@@ -1,0 +1,13 @@
+1. we see how to handel the [context API] 
+
+what is context Api? => context api ka conpect ya h ky agr hm koi dashbord wagera bna rhy hn or is project mn component ky ander component ho or us ky ander component ho or hm us mn koi prop pass kr rhy hn jo main parent component mn h  to sub component ko prop pass krna pry ga last child component tk prop ko pass krny ky leye but is sy purformance choke kr jy gi or jin components ko is prop ki zarort ni un ko b pass krna pr jy ga jo bhot lengthy work h is leye koi aesa concept ho jis mn hm [prop] ko globly set kr dean or jis jis component ko is prop ko need ho wo directly whn sy access kr ly to is concept ky leye hmen [react] aik hook deata h [useContext] or isi concept ko [context Api] bola jata  
+
+what is ment by Context Api its mean ky hm aik global variable banaen gy and us variable ky ander sara Data jy ga but bcz it is [React] we see state didnot update easily if it posible then we directly made a file with name of [global-varaiable.js ] but this is not good syntaxt and we eventualy we stuck into same problem that [react] want to solve that the [state] is miss match and syncronization nhi h for this we didnot make direct [global-varaiable.js ] file . This is idea is ok that made globle file and put all [variable] there we can do this but our project comes into problem from everywhere that Q ky koi bhi varaiable us  ko update kr dy ga or jhn ap ni chaty varaiable whn b update ho jy ga ya aik problem ata h . so for this what we can do we see in steps
+
+2. create a new folder in source folder with name of [Context] and mostly people use this name but it is not compulsery to write this name but it is good practise and in this folder we create file with name of [UserContext.js] we didnot use [jsx] we use [js] bcz in this we use pure and pure JS  mostly . 
+
+3. now we made  this [context] into 2 files mn break kr ky now see jesy [userCOntext] h usi thra sy [loginContext] ho skta h [products] ka b [context] ho skta h [cart] ka b context ho skta h it means we made multiple context we read this in further videos.
+
+4.now go to our [UserContext.js] file and see there what we do there ?
+
+5.After making [COntext] now in part 2 we made our provide 🔻 for this we make a file with name [UserContextProvider.jsx] in context folder and in this file we use [.jsx] abhi tk jo tha wo [.js] that Q ky whn pr koi [jsx] return ni ho rha tha liken jesy hi hm [contextprovider] bnaty hn ab hmen [jsx] bnana pry ga Q ky jo hm [framents] ly rhy thy us ko top level mn rakhna pry ga tbhi to hmry sary variables mn wo access ho py ga mean hm  component use krty hn is leye hm ny is ko [jsx] bnaya . now go to [UserContextProvider.jsx] file and work there 
