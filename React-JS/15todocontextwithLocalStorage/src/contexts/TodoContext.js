@@ -37,9 +37,9 @@ export const TodoContext = createContext({
 
   addTodo: (todo) => {},
 
-  //   now after addTodo we can also [update] or todo too so for this we also write functionality like 🔻
+  //   now after addTodo we can also [update] our todo too so for this we also write functionality like 🔻
 
-  // now [Update] is not a [toggle] in update [pora ka pora ] complete toDo can update and in this fn() we want 2 things [one] is [id] that is for which todo you can want toupdate and [2nd] thing is [todo] which show todo msg of todo when we click on [update] so now se how we write functionality 🔻
+  // now [Update] is not a [toggle] in update [pora ka pora ] complete toDo can update and in this fn() we want 2 things [one] is [id] that is for which todo you can want to update and [2nd] thing is [todo] which show todo msg of todo when we click on [update] so now se how we write functionality 🔻
 
   updatedTodo: (id, todo) => {},
 

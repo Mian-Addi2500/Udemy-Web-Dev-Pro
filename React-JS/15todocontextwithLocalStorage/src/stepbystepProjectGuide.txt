@@ -1,4 +1,4 @@
-1. we create contexts folder in src folder and in this folder we create a file with name of [TodoContext.js] bcz it does not return any [jsx] thats why we name it [.js] now go to that file and made our [context]
+1. we create contexts folder in src folder and in this folder we create a file with name of [TodoContext.js] bcz it does not return any [jsx] thats why we name it [.js] now go to that file and made our [Todocontext]
 
 2.we make an [index.js] file in [contexts] folder now Question is why we make this file ? => the answer is in mostly folder mostly people make [index] file to get all [import] meterial in this [index] file and which can want any thing can get this file directly . So go to that file and see how we write code
 

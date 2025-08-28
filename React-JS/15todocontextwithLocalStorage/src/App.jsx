@@ -23,17 +23,17 @@ function App() {
   // now 1st one is [basic] functionality and in this we [add] value
   // main thing is [name] of the fn() in [context and here] should be same
   const addTodo = (todo) => {
-    // now go to our [context] file and see how [addtodo] can do work for this we require [todo] according to our [todocontext] file so we can take [todo] as variable input to our fn() and this [todo] in [string] form and this didnot comes from our [state] bcz in [state] we have all [todos] which comes from [values] of [fragment] so indiviual [todo] is not prestent right now so this todo comes from the [form] which we made below now assume that [todo] comes
-    // now our this [todo] should go to our [state] all [todos] in an empty array but there is not nesserary every time arry should be empty maybe possible some values are there in array and most of the time values are present so for this we 1st of call our [setTodos] method of our [state] like🔻
+    // now go to our [context] file and see how [addtodo] can do work for this we require [todo] according to our [todocontext] file so we can take [todo] as variable input to our fn() and this [todo] in [string] form and this didnot comes from our [state] bcz in [state] we have all [todos] which comes from [values] of [fragment] so indiviual [todo] is not prestent right now so this todo comes from the [Todoform] which we made below now assume that [todo] comes
+    // now our this [todo] should go to our [state] all [todos] in an empty array but there is not nesserary every time arry should be empty maybe possible some values are there in array and most of the time values are present so for this we 1st of call our [setTodos] method of our [state]
 
     /* but but when we write [todo] in our [setTodo] like 
 
     setTodos(todo)
 
-    this will overright our all todo array so how to add our new todo without deleting our old one for this we study that our [setTodo ] have callback fn() in this fn() we write our [previous] values and [spred] them in our fn() and after that we can add our new [todo] by this our prev remian same and new can be added like 🔻 
+    this will overwrite our all todo array ,so how we can add our new todo without deleting/overwriting our old one for this we study that our [setTodo ] have callback fn() in this fn() we write our [previous] values and [spred] them in our fn() and after that we can add our new [todo] by this our prev remian same and new can be added  
 
     */
-    //  now in this we made our [todo] bcz when we see in our [context] so we made our todo is an [object] [aesa ni h ky sirf aik string add kr di h agr ap ko string deani h but agr id ni ho gi to [keys] loop lagany mn problem aye gi so id to zarori h ] so now we have 3 values in our todo of [context] so I can not add direct [todo] for this I will give an [object] and in this object 1st of all I will give an [ID] now I didnot know what id I can pass so for Dynamic value i pass [Date.now() method] in our Id for rendom id and after [id] we [destructur/ spread] our todo to take all values as it is like [...id] bcz I know [todo] is an object [apny ap mn ] let see how write code 🔻
+    //  now in this we made our [todo] bcz when we see in our [context] so we made our todo is an [object] [aesa ni h ky sirf aik string add kr di h agr ap ko string deani h but agr id ni ho gi to [keys] loop lagany mn problem aye gi so id to zarori h ] so now we have 3 values in our todo of [context] so I can not add direct [todo] for this I will give an [object] and in this object 1st of all I will give an [ID] now I didnot know what id I can pass so for Dynamic value i pass [Date.now() method] in our Id for rendom id and after [id] we [destructur/ spread] our todo to take all values as it is like [...todo] bcz I know [todo] is an object [apny ap mn ] let see how write code 🔻
     setTodos((prevTodo) => [{ id: Date.now(), ...todo }, ...prevTodo]);
   };
 
@@ -94,7 +94,7 @@ function App() {
 
     const todos = JSON.parse(localStorage.getItem("todos"));
 
-    // now we set the values if there something then ! for this we take a conditional check that is there [todos] are available or not if not then we set value the app should be crashed and we also ask an other querry to our [if] statement that the [todo] which comes is have any [length] is greater then [0] or not ? bcz I know [todo] is an array yes we say this is a [json] but endof the day [todos] are array and object inside an array so to preserve this structure to then it should be preserv through [json] and in [string] this structur is n avalible so you take array it is not nessary [jason] means [currely brases] json mean should be [array] it is posible like 🔻
+    // now we set the values if there something then ? for this we take a conditional check that is there [todos] are available or not if not then we set value the app should be crashed and we also ask an other querry to our [if] statement that the [todo] which comes is have any [length] is greater then [0] or not ? bcz I know [todo] is an array yes we say this is a [json] but endof the day [todos] are array and object inside an array so to preserve this structure to then it should be preserv through [json] and in [string] this structur is not avalible so you take array it is not nessary [jason] means [currely brases] json mean should be [array] it is posible like 🔻
 
     if (todos && todos.length > 0) {
       // now we set our [todos]
@@ -102,7 +102,7 @@ function App() {
     }
   }, []);
 
-  // now the question is can we use multiple [useeffects] ? the answer is [yes] so now we have work in an other [ls] bcz above [ls] work is when we load our [app] then our all [todos] comes but now we have an [other work] is that when we add [todo] then I want to [store] this [todo] to [ls] now when add to [ls] so when it go to above [state todos] [halan ky ja constext Api ky throght rhi h but end of the day [context api] also avaliabe here in this file in form of [todoProvide] ] so this provider give to me the [todos] so when values go to that form there we get value to our [state todos] and when something change in [useSTate todos] so I will add all that value to [ls] now we think that when we use above [useEffect] we use [todos] in [dependency Array] and write an other method on above yes we can do but problem should be come that when some change should be come into the [todos] of [d-array] then it will also [get] again by [get] method which we write above so I didnot want that it should be run
+  // now the question is can we use multiple [useeffects] ? the answer is [yes] so now we have work in an other [ls] bcz above [ls] work is when we load our [app] then our all [todos] comes but now we have an [other work] is that when we add [todo] then I want to [store] this [todo] to [ls] now when add to [ls] so when it go to above [state todos] [halan ky ya constext Api ky throght rhi h but end of the day [context api] also avaliabe here in this file in form of [todoProvide] ] so this provider give to me the [todos] so when values go to that form there we get value to our [state todos] and when something change in [useSTate todos] so I will add all that value to [ls] now we think that when we use above [useEffect] we use [todos] in [dependency Array] and write an other method on above yes we can do but problem should be come that when some change should be come into the [todos] of [dependency-array] then it will also [get] again by [get] method which we write above so I didnot want that it should be run
 
   // so to over this problem we have many options but we have one of them is to use another [useEffect] and mostly app use more then one [useEffect] so now we write code in it
 
@@ -110,6 +110,8 @@ function App() {
     // now we set item here and in [setItem] we will pass [key and value] and these should be pass in [string] formate so our [key] should be [string] but our [value] is in [array] formate  so our [ls] should not get value so what can I do ? so for this now our [JSON] give us an other method which is [jason.stringify] and that should be convert all tinghs in to string
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
+
+  // now go to stepbystepguid file
 
   return (
     <TodoProvider
